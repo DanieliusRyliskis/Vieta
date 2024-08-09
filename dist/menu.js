@@ -1,7 +1,6 @@
-const menu = document.getElementById("hamburger");
+const hamburgerMenu = document.getElementById("hamburgerMenu");
 const links = document.getElementById("links");
 
-menu.addEventListener("click", () => {
-  console.log(links);
+hamburgerMenu.addEventListener("click", () => {
   links.classList.toggle("active");
 });
