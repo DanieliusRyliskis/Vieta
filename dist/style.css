@@ -649,6 +649,10 @@ video {
   width: 30%;
 }
 
+.w-\[75\%\] {
+  width: 75%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -736,6 +740,10 @@ video {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-left {
