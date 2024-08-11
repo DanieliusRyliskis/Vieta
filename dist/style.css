@@ -566,12 +566,12 @@ video {
   bottom: 0px;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .right-0 {
   right: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .m-12 {
@@ -583,27 +583,16 @@ video {
   margin-right: auto;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -616,6 +605,18 @@ video {
 
 .h-auto {
   height: auto;
+}
+
+.h-px {
+  height: 1px;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .w-\[80\%\] {
@@ -631,40 +632,8 @@ video {
   width: fit-content;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-\[70\%\] {
-  width: 70%;
-}
-
-.w-\[60\%\] {
-  width: 60%;
-}
-
-.w-\[25\%\] {
-  width: 25%;
-}
-
-.w-\[35\%\] {
-  width: 35%;
-}
-
-.w-\[65\%\] {
-  width: 65%;
-}
-
-.w-\[30\%\] {
-  width: 30%;
-}
-
-.w-\[75\%\] {
-  width: 75%;
-}
-
-.w-\[85\%\] {
-  width: 85%;
+.w-\[10\%\] {
+  width: 10%;
 }
 
 .cursor-pointer {
@@ -691,23 +660,13 @@ video {
   overflow: hidden;
 }
 
-.border-2 {
-  border-width: 2px;
+.border-none {
+  border-style: none;
 }
 
-.border-red-950 {
-  --tw-border-opacity: 1;
-  border-color: rgb(69 10 10 / var(--tw-border-opacity));
-}
-
-.border-red-900 {
-  --tw-border-opacity: 1;
-  border-color: rgb(127 29 29 / var(--tw-border-opacity));
-}
-
-.border-red-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(185 28 28 / var(--tw-border-opacity));
+.bg-accent {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 54 77 / var(--tw-bg-opacity));
 }
 
 .bg-primary {
@@ -748,16 +707,20 @@ video {
   padding-bottom: 3rem;
 }
 
-.pr-10 {
-  padding-right: 2.5rem;
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .pl-4 {
   padding-left: 1rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-left {
@@ -781,11 +744,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-gray-600 {
