@@ -180,54 +180,49 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="bg-primary">
-        <div class="lg:grid lg:grid-cols-12 lg:auto-rows-auto lg:grid-rows-2 lg:pt-8 lg:pb-16">
-            <picture class="lg:col-[1/4]">
-                <source srcset="../img/logo.svg" media="(min-width: 1024px)">
-                <img class="cursor-pointer mx-auto pt-4" src="../img/mobile_logo.svg" alt="vieta logotipas"  />
-            </picture>
-            <div class="lg:flex lg:col-[5/13] lg:gap-16 lg:row-[1/3]">
-                <div>
-                    <h3 class="text-center text-xl roboto-mono-medium py-4">Naršyti</h3>
-                    <ul>
-                        <li class="text-center lg:text-left">Meniu</li>
-                        <li class="text-center lg:text-left">Parodos</li>
-                        <li class="text-center lg:text-left">Apie mus</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-center text-xl roboto-mono-medium py-4 lg:text-left">Darbo laikas</h3>
-                    <ul class="flex justify-center items-center gap-2">
-                        <li>
-                            <img src="../img/clock.svg" alt="laikrodžio piktograma">
-                        </li>
-                        <div>
-                            <li>I-V 11:30-16:00 val.</li>
-                            <li>VI-VII nedirbame</li>
-                        </div>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-center text-xl roboto-mono-medium py-4 lg:text-left">Kontaktai</h3>
-                    <ul>
-                        <li class="flex justify-center items-center gap-1 lg:justify-start">
-                            <img src="../img/location.svg" alt="vietos piktograma">
-                            <span>Šv. Ignoto 12 - 1, Vilnius</span>
-                        </li>
-                        <li class="flex justify-center items-center gap-2 lg:justify-start">
-                            <img src="../img/mail.svg" alt="pašto piktograma">
-                            <span>sv.vieta@gmail.com</span>
-                        </li>
-                        <li class="flex justify-center items-center gap-2 lg:justify-start">
-                            <img src="../img/phone.svg" alt="telefono piktograma">
-                            <span>+370 675 03263</span>
-                        </li>
-                    </ul>
-                </div>
+        <footer class="bg-primary">
+                    <source srcset="../img/logo.svg" media="(min-width: 1024px)">
+                    <img src="../img/mobile_logo.svg" alt="vieta logotipas" class="cursor-pointer" />
+                </picture>
+            <div>
+                <h3 class="text-center text-xl roboto-mono-medium pb-4">Naršyti</h3>
+                <ul>
+                    <li class="text-center">Meniu</li>
+                    <li class="text-center">Parodos</li>
+                    <li class="text-center">Apie mus</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-center text-xl roboto-mono-medium py-4">Darbo laikas</h3>
+                <ul class="flex justify-center items-center gap-2">
+                    <li>
+                        <img src="../img/clock.svg" alt="laikrodžio piktograma">
+                    </li>
+                    <div>
+                        <li>I-V 11:30-16:00 val.</li>
+                        <li>VI-VII nedirbame</li>
+                    </div>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-center text-xl roboto-mono-medium py-4">Kontaktai</h3>
+                <ul>
+                    <li class="flex justify-center items-center gap-1">
+                        <img src="../img/location.svg" alt="vietos piktograma">
+                        <span>Šv. Ignoto 12 - 1, Vilnius</span>
+                    </li>
+                    <li class="flex justify-center items-center gap-2">
+                        <img src="../img/mail.svg" alt="pašto piktograma">
+                        <span>sv.vieta@gmail.com</span>
+                    </li>
+                    <li class="flex justify-center items-center gap-2">
+                        <img src="../img/phone.svg" alt="telefono piktograma">
+                        <span>+370 675 03263</span>
+                    </li>
+                </ul>
             </div>
             <!-- Social Media Icons -->
-            <div class="flex justify-center items-center py-4 gap-2 lg:col-[2/3]">
+            <div class="flex justify-center items-center py-4 gap-2">
                 <a class="inline-block" href="#">
                     <img src="../img/facebook.svg" alt="facebook piktograma">
                 </a>
@@ -235,11 +230,11 @@
                     <img src="../img/instagram.svg" alt="instagram piktograma">
                 </a>
             </div>
-        </div>
-        <hr class="bg-accent border-none h-px">
-        <!-- Need to add javascript for the date -->
-        <h5>Restoranas „Vieta“ &copy; 2024</h5>
-    </footer>
+            <hr class="bg-accent border-none h-px">
+            <!-- Need to add javascript for the date -->
+            <h5>Restoranas „Vieta“ &copy; 2024</h5>
+        </footer>
+    </main>
     <script src="./menu.js"></script>
 </body>
 
