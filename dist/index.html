@@ -22,8 +22,8 @@
                     <source srcset="../img/logo.svg" media="(min-width: 1024px)">
                     <img src="../img/mobile_logo.svg" alt="vieta logotipas" class="cursor-pointer" />
                 </picture>
-                <img class="lg:hidden" src="../img/hamburger_menu.svg" alt="isskleisti puslapio navigacijos meniu"
-                    id="hamburgerMenu" />
+                <img class="lg:hidden cursor-pointer" src="../img/hamburger_menu.svg"
+                    alt="isskleisti puslapio navigacijos meniu" id="hamburgerMenu" />
             </div>
             <ul class="overflow-hidden prev-state lg:h-fit lg:flex lg:justify-center lg:items-center lg:pr-6"
                 id="links">
@@ -38,14 +38,15 @@
     </header>
     <main>
         <section class="lg:flex lg:items-center 2xl:mr-24">
-            <div class=" w-[80%]">
+            <div class="border-red-500 border-2 mb-8">
                 <div class="border-green-500 border-2">
-                    <h1 class="roboto-mono-bold text-5xl">
+                    <h1 class="roboto-mono-bold text-5xl py-4">
                         Vieta
                         - veganiška kavinė ir parodų erdvė</h1>
                     <button class="bg-primary open-sans-normal px-2 py-1 text-xl">Susisiekime</button>
                 </div>
             </div>
+            <!-- Could remove height from the image and center it so it would appear wider -->
             <picture>
                 <source srcset="../img/hero-section.webp" type="image/webp">
                 <img loading="lazy" class=" w-[80%] h-auto mx-auto lg:w-full lg:h-[93vh] lg:object-cover"
@@ -55,76 +56,75 @@
         <section class="bg-secondary">
             <h2 class=" text-center text-4xl roboto-mono-bold py-4 sm:py-8">Meniu</h2>
             <div class="pb-12">
-                <h3 class="text-center text-3xl roboto-mono-medium ">Užkandžiai</h3>
+                <h4 class="text-center text-2xl roboto-mono-medium ">Užkandžiai</h4>
                 <ul>
                     <li>
-                        <h4 class="roboto-mono-medium text-center text-2xl mt-4">Humoso lėkštė <span
-                                class="roboto-mono-medium text-2xl">6.50€</span></h4>
-                        <h5 class="text-gray-600 text-center text-sm w-[90%] mx-auto md:w-[75%]">avinžirniai,kalendra,
+                        <h5 class="roboto-mono-medium text-center text-xl mt-4 mb-1">Humoso lėkštė <span
+                                class="roboto-mono-medium text-xl">6.50€</span></h5>
+                        <h6 class="text-gray-600 text-center text-sm w-[90%] mx-auto md:w-[75%]">avinžirniai,kalendra,
                             žemės
                             riešutų kremas, česnakas, citrinų sultys, agurkų ir morkų
-                            lazdelės, sezamas, rukola, česnakinė duonelė</h5>
+                            lazdelės, sezamas, rukola, česnakinė duonelė</h6>
                         <p class="hidden">6.50€</p>
                     </li>
                     <li>
-                        <h4 class="roboto-mono-medium text-center text-2xl mt-4">Marinuotos alyvuogės <span
-                                class="roboto-mono-medium text-2xl">6.00€</span></h4>
-                        <h5 class="text-gray-600 text-center text-sm w-[90%] mx-auto md:w-[75%]">alyvuogės, česnakas,
+                        <h5 class="roboto-mono-medium text-center text-xl mt-4 mb-1">Marinuotos alyvuogės <span
+                                class="roboto-mono-medium text-xl">6.00€</span></h5>
+                        <h6 class="text-gray-600 text-center text-sm w-[90%] mx-auto md:w-[75%]">alyvuogės, česnakas,
                             alyvuogių
                             aliejus, rozmarinas, čiobrelis, citrina, agavos sirupas,
-                            česnakinė duonelė)</h5>
+                            česnakinė duonelė)</h6>
                         <p class="hidden">6.50€</p>
                     </li>
                     <li>
-                        <h4 class="roboto-mono-medium text-center text-2xl mt-4">Burokėlių Karpačio <span
-                                class="roboto-mono-medium text-2xl">7.20€</span></h4>
-                        <h5 class="text-gray-600 text-center text-sm w-[90%] mx-auto md:w-[75%]">burokėliai, augalinė
+                        <h5 class="roboto-mono-medium text-center text-xl mt-4 mb-1">Burokėlių Karpačio <span
+                                class="roboto-mono-medium text-xl">7.20€</span></h5>
+                        <h6 class="text-gray-600 text-center text-sm w-[90%] mx-auto md:w-[75%]">burokėliai, augalinė
                             feta,
                             sezamas, rukola, graikiniai riešutai, balzamikas, alyvuogių
-                            aliejus, česnakinė duonelė</h5>
+                            aliejus, česnakinė duonelė</h6>
                         <p class="hidden">6.50€</p>
                     </li>
                 </ul>
-                <h3 class="text-center roboto-mono-medium text-3xl pt-4 ">Dienos pietūs</h3>
-                <ul>
-                    <li>
-                        <h4 class="roboto-mono-medium text-center text-2xl mt-4">Šaltibarščiai <span
-                                class="roboto-mono-medium">6.50€</span></h4>
-                        <h5 class="text-gray-600 text-center text-sm w-[90%] mx-auto">Ingridientai</h5>
-                        <p class="hidden">6.50€</p>
-                    </li>
-                </ul>
+                <h4 class="text-center roboto-mono-medium text-2xl mt-4">Dienos pietūs</h5>
+                    <ul>
+                        <li>
+                            <h5 class="roboto-mono-medium text-center text-xl mt-4 mb-1">Šaltibarščiai <span
+                                    class="roboto-mono-medium">6.50€</span></h5>
+                            <h6 class="text-gray-600 text-center text-sm w-[90%] mx-auto">Ingridientai</h6>
+                            <p class="hidden">6.50€</p>
+                        </li>
+                    </ul>
             </div>
         </section>
-        <section class="lg:flex lg:items-center lg:my-20">
-            <div class="m-12 lg:w-[55%]">
-                <h2 class="roboto-mono-bold text-4xl py-2 pr-10 text-left md:mx-[16%]">Užsisakykite internetu
+        <section class="flex flex-col items-center lg:flex-row lg:justify-around lg:my-32">
+            <div class="my-12 w-[80%] lg:w-[55%] max-w-lg">
+                <h2 class="roboto-mono-bold text-4xl text-left w-min">Užsisakykite internetu
                 </h2>
-                <h3 class="open-sans-normal text-3xl md:mx-[16%]">Išalkote, bet negalite atvykti pas mus? Ne bėda! Mėgaukitės
+                <h4 class="open-sans-normal text-2xl my-4 max-w-md ">Išalkote, bet negalite atvykti pas mus? Ne bėda!
+                    Mėgaukitės
                     mūsų maistu
-                    neišeidami iš namų.</h3>
-                <button class="bg-primary py-2 px-2 open-sans-normal text-xl mt-4 md:mx-[16%]">Užsisakyk dabar</button>
+                    neišeidami iš namų.</h4>
+                <button class="open-sans-normal text-xl bg-primary p-2 lg:py-2.5 lg:px-4">Užsisakyk dabar</button>
             </div>
-            <picture>
+            <picture class="w-[80%] h-auto max-w-lg lg:w-[55%]">
                 <source srcset="../img/wolt.webp" type="image/webp">
-                <img class="w-[80%] h-auto mx-auto md:w-[60%] lg:p-12 lg:w-full" src=".,/img/wolt.jpg"
-                    alt="wolt mobiliosios aplikacijos nuotrauka">
+                <img src=".,/img/wolt.jpg" alt="wolt mobiliosios aplikacijos nuotrauka">
             </picture>
         </section>
-        <section class="lg:flex lg:items-center lg:my-32">
-            <div class="m-12 w-[55%] order-2">
-                <h2 class="roboto-mono-bold text-4xl py-2 pr-10 text-left md:mx-[16%]">Parodos pavadinimas
+        <section class="flex flex-col items-center lg:flex-row lg:justify-around lg:my-32">
+            <div class="my-12 w-[80%] lg:w-[55%] max-w-lg order-2">
+                <h2 class="roboto-mono-bold text-4xl text-left w-min">Parodos Pavadinimas
                 </h2>
-                <h3 class="open-sans-normal text-3xl md:mx-[16%]">Nepraleiskite progos išvysti nepakartojamų ekspozicijų.
-                    Nesvarbu, ar jums
-                    patinka puikus maistas, ar menas, mūsų ekspozicijos siūlo nepakartojamą aplinką, kuria galėsite
-                    mėgautis kiekvieną kartą, kai prie mūsų prisijungsite.</h3>
-                <button class="bg-primary py-2 px-2 open-sans-normal text-xl mt-4 md:mx-[16%]">Skaityti plačiau</button>
+                <h4 class="open-sans-normal text-2xl my-4 max-w-md ">Nepraleiskite progos išvysti nepakartojamų
+                    ekspozicijų. Nesvarbu, ar jums patinka puikus maistas, ar menas, mūsų ekspozicijos siūlo
+                    nepakartojamą aplinką, kuria galėsite mėgautis kiekvieną kartą, kai prie mūsų prisijungsite.
+                </h4>
+                <button class="open-sans-normal text-xl bg-primary p-2 lg:py-2.5 lg:px-4">Skaityti plačiau</button>
             </div>
-            <picture>
+            <picture class="w-[80%] h-auto max-w-lg lg:w-[55%]">
                 <source srcset="../img/art.webp" type="image/webp">
-                <img class="w-[80%] h-auto mx-auto md:w-[60%] lg:w-[100%] lg:p-12 lg:w-full" src=".,/img/art.png"
-                    alt="parodos nuotrauka">
+                <img src=".,/img/art.png" alt="wolt mobiliosios aplikacijos nuotrauka">
             </picture>
         </section>
         <section>
@@ -138,7 +138,8 @@
                         <img class="w-[80%] h-auto mx-auto md:w-[60%] lg:w-full lg:p-20" src="../img/About 1.jpg"
                             alt="Restorano savininkai stovintys prie restorano įėjimo">
                     </picture>
-                    <p class="open-sans-normal text-lg m-12 md:mx-[20%] lg:w-[30rem] lg:m-12 lg:p-16 lg:pl-0 lg:ml-0">Esame
+                    <p class="open-sans-normal text-lg m-12 md:mx-[20%] lg:w-[30rem] lg:m-12 lg:p-16 lg:pl-0 lg:ml-0">
+                        Esame
                         veganiška
                         kavinė įsikūrusi Vilniaus širdyje.
                         Mūsų maistas
@@ -155,7 +156,8 @@
                             src="../img/About 2.jpg"
                             alt="Virėjai ir savininkai laikantys įvairaus tipo augalus prie restorano įėjimo">
                     </picture>
-                    <p class="open-sans-normal text-lg m-12 md:mx-[20%] lg:w-[30rem] lg:m-4 lg:p-16">Gerbiame ne tik žmones,
+                    <p class="open-sans-normal text-lg m-12 md:mx-[20%] lg:w-[30rem] lg:m-4 lg:p-16">Gerbiame ne tik
+                        žmones,
                         bet
                         ir gamtą. Vieta yra viena
                         seniausių
@@ -170,7 +172,8 @@
                             alt="Nuotrauka iš Linos Ziz parodos">
 
                     </picture>
-                    <p class="open-sans-normal text-lg m-12 md:mx-[20%] lg:w-[30rem] lg:m-12 lg:p-16 lg:pl-0 lg:ml-0">Mūsų
+                    <p class="open-sans-normal text-lg m-12 md:mx-[20%] lg:w-[30rem] lg:m-12 lg:p-16 lg:pl-0 lg:ml-0">
+                        Mūsų
                         baltos kavinės
                         sienos papuoštos menu, todėl
                         nusprendėme
