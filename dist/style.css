@@ -554,6 +554,18 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -597,6 +609,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .inline-block {
@@ -771,6 +787,11 @@ video {
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(210 245 255 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-2 {
