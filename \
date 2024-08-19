@@ -95,89 +95,74 @@
                     </ul>
             </div>
         </section>
-        <section class="w-[min(90%,_80rem)] mx-auto gap-16 grid grid-cols-1 my-32 lg:grid-cols-2 items-center">
-            <div class="my-12 my-4 max-w-lg">
+
+
+
+
+
+        <section class="flex flex-col items-center lg:flex-row lg:justify-around lg:my-32">
+            <div class="my-12 my-4 border-2 border-blue-500 w-[80%] max-w-xl">
                 <h2 class="roboto-mono-bold text-4xl text-left w-min">Užsisakykite internetu
                 </h2>
-                <h4 class="open-sans-normal text-2xl my-4">Išalkote, bet negalite
+                <h4 class="open-sans-normal text-2xl my-4 border-2 border-red-500">Išalkote, bet negalite
                     atvykti pas mus? Ne bėda!
                     Mėgaukitės
                     mūsų maistu
                     neišeidami iš namų.</h4>
                 <button class="open-sans-normal text-xl bg-primary p-2 lg:py-2.5 lg:px-4">Užsisakyk dabar</button>
             </div>
-            <picture>
-                <source srcset="../img/wolt.webp" type="image/webp">
-                <img class="w-full" src="../img/wolt.jpg" alt="wolt mobiliosios aplikacijos nuotrauka">
+            <picture class="w-[80%] max-w-xl h-auto my-4 border-2 border-red-500">
+                <source srcset="../img/About 1.jpg" type="image/webp">
+                <img src="../img/About 1.jpg" alt="wolt mobiliosios aplikacijos nuotrauka">
             </picture>
         </section>
-        <section class="w-[min(90%,_80rem)] mx-auto gap-16 grid grid-cols-1 my-32 lg:grid-cols-2 items-center">
-            <div class="my-12 my-4 max-w-lg lg:order-2">
-                <h2 class="roboto-mono-bold text-4xl text-left w-min">Parodos pavadinimas
+
+
+
+
+        <section class="my-12 flex flex-col items-center">
+            <div class="mb-8 w-[80%] max-w-xl">
+                <h2 class="roboto-mono-bold text-4xl text-left w-fit">Apie mus
                 </h2>
-                <h4 class="open-sans-normal text-2xl my-4">Nepraleiskite progos išvysti nepakartojamų ekspozicijų.
-                    Nesvarbu, ar jums patinka puikus maistas, ar menas, mūsų ekspozicijos siūlo nepakartojamą aplinką,
-                    kuria galėsite mėgautis kiekvieną kartą, kai prie mūsų prisijungsite.
-                </h4>
-                <button class="open-sans-normal text-xl bg-primary p-2 lg:py-2.5 lg:px-4">Skaityti plačiau</button>
             </div>
-            <picture>
-                <source srcset="../img/art.webp" type="image/webp">
-                <img class="w-full" src="../img/art.png" alt="parodos nuotrauka">
+            <picture class="width-[80%] max-w-xl h-auto">
+                <source srcset="../img/About 1.webp" type="image/webp">
+                <img src="../img/About 1.jpg" alt="Restorano savininkai stovintys prie restorano įėjimo">
             </picture>
-        </section>
-        <section class="w-[min(90%,_80rem)] mx-auto grid grid-cols-1 items-center lg:gap-20 my-32">
-            <div class="my-12 my-4 max-w-lg">
-                <h2 class="roboto-mono-bold text-4xl text-left">Apie mus</h2>
-            </div>
-            <!-- About Section 1 -->
-            <div class="lg:grid lg:grid-cols-2 items-center gap-16">
-                <picture>
-                    <source srcset="../img/About 1.webp" type="image/webp">
-                    <img class="w-full" src="../img/About 1.jpg" alt="restorano savininkai stovintys prie įėjimo">
-                </picture>
-                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">
-                    Esame
-                    veganiška
-                    kavinė įsikūrusi Vilniaus širdyje.
-                    Mūsų maistas
-                    žemiškas ir paprastas - dažnai pas mus pabuvę žmonės sako, kad jaučiasi lyg apsilankę pas
-                    močiutę. Norime, kad pas mus ateitumėte lyg į svečius, o ne tiesiog į kavinę. Pagrindinė
-                    taisyklė čia yra pagarba vienas kitam, nesvarbu, kokią rolę užimi šioje vietoje</p>
-            </div>
-            <!-- About Section 2 -->
-            <div class="lg:grid lg:grid-cols-2 items-center gap-16">
-                <picture class="lg:order-2">
-                    <source srcset="../img/About 2.webp" type="image/webp">
-                    <img class="w-full" src="../img/About 2.jpg" alt="virtuvės darbuotojai laikantys augalus">
-                </picture>
-                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">Gerbiame ne tik žmones, bet ir gamtą. Vieta
-                    yra viena seniausių vegetariškų kavinių Vilniuje, o 2022 ji tapo veganiška. Mums labai rūpi gamta ir
-                    joje esanti gyvybė, todėl rūšiuojame, stengiamės rinktis tik etiškus produktus, kuo mažiau maisto
-                    išsimesti, skatiname atsinešti savo išsinešimo indelius ir t.t.
-            </div>
-            <!-- About Section 3 -->
-            <div class="lg:grid lg:grid-cols-2 items-center gap-16">
-                <picture>
-                    <source srcset="../img/About 3.webp" type="image/webp">
-                    <img class="w-full" src="../img/About 3.jpg" alt="nuotrauka iš Linos Ziz parodos">
-                </picture>
-                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">Mūsų baltos kavinės sienos papuoštos menu,
-                    todėl nusprendėme Vietoje rengti parodas. Tai dažniausiai būna pradedančių kūrėjų darbai
-                    (fotografija tapyba, grafika ir kt.), tačiau turėjome ir žymaus Lietuvos tapytojo Aloyzo
-                    Stasiulevičiaus parodą. Tad jei ir tu norėtum pas mus surengti savo parodą, susisiek !
-            </div>
+            <p class="open-sans-normal text-lg w-[80%] max-w-lg my-12 border-2 border-red-500">
+                Esame
+                veganiška
+                kavinė įsikūrusi Vilniaus širdyje.
+                Mūsų maistas
+                žemiškas ir paprastas - dažnai pas mus pabuvę žmonės sako, kad jaučiasi lyg apsilankę pas
+                močiutę. Norime, kad pas mus ateitumėte lyg į svečius, o ne tiesiog į kavinę. Pagrindinė
+                taisyklė čia yra pagarba vienas kitam, nesvarbu, kokią rolę užimi šioje vietoje</p>
+            <!-- <div class="lg:block"> -->
+            <!--     <!-- First About Section -->
+            <!--     <div class="lg:grid lg:grid-cols-2 lg:items-center"> -->
+            <!--         <picture> -->
+            <!--             <source srcset="../img/About 1.webp" type="image/webp"> -->
+            <!--             <img src="../img/About 1.jpg" alt="Restorano savininkai stovintys prie restorano įėjimo"> -->
+            <!--         </picture> -->
+            <!--         <p class="open-sans-normal text-lg max-w-lg my-12"> -->
+            <!--             Esame -->
+            <!--             veganiška -->
+            <!--             kavinė įsikūrusi Vilniaus širdyje. -->
+            <!--             Mūsų maistas -->
+            <!--             žemiškas ir paprastas - dažnai pas mus pabuvę žmonės sako, kad jaučiasi lyg apsilankę pas -->
+            <!--             močiutę. Norime, kad pas mus ateitumėte lyg į svečius, o ne tiesiog į kavinę. Pagrindinė -->
+            <!--             taisyklė čia yra pagarba vienas kitam, nesvarbu, kokią rolę užimi šioje vietoje</p> -->
+            <!--     </div> -->
+            <!-- </div> -->
         </section>
     </main>
     <footer class="bg-primary">
-        <div class="lg:grid lg:grid-cols-12 lg:grid-rows-2 lg:pt-8 lg:pb-16">
+        <div class="lg:grid lg:grid-cols-12 lg:auto-rows-auto lg:grid-rows-2 lg:pt-8 lg:pb-16">
             <picture class="lg:col-[1/4]">
                 <source srcset="../img/logo.svg" media="(min-width: 1024px)">
                 <img class="cursor-pointer mx-auto pt-4" src="../img/mobile_logo.svg" alt="vieta logotipas" />
             </picture>
-            <!-- Links Flexbox Container -->
-            <div class="lg:flex lg:gap-20 lg:col-[5/13] lg:row-[1/3]">
-                <!-- Section 1 -->
+            <div class="lg:flex lg:col-[5/13] lg:gap-20 lg:row-[1/3]">
                 <div>
                     <h3 class="text-center text-3xl roboto-mono-medium py-4">Naršyti</h3>
                     <ul>
@@ -186,7 +171,6 @@
                         <li class="text-center text-base lg:text-left">Apie mus</li>
                     </ul>
                 </div>
-                <!-- Section 2 -->
                 <div>
                     <h3 class="text-center text-3xl roboto-mono-medium py-4 lg:text-left">Darbo laikas</h3>
                     <ul class="flex justify-center items-center gap-2">
@@ -199,11 +183,10 @@
                         </div>
                     </ul>
                 </div>
-                <!-- Section 3 -->
                 <div>
                     <h3 class="text-center roboto-mono-medium text-3xl py-4 lg:text-left">Kontaktai</h3>
                     <ul>
-                        <li class="flex justify-center text-base items-center gap-2 lg:justify-start">
+                        <li class="flex justify-center text-base items-center gap-1 lg:justify-start">
                             <img class="w-[1.3rem] h-auto" src="../img/location.svg" alt="vietos piktograma">
                             <span>Šv. Ignoto 12 - 1, Vilnius</span>
                         </li>
