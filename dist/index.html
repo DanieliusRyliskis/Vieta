@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 
+<!-- Check Browser Compatibility -->
+
 <body class="roboto-mono-normal">
     <header class="sticky top-0">
         <nav class="bg-white flex flex-col flex-wrap lg:flex-row lg:items-center">
@@ -27,11 +29,21 @@
             </div>
             <ul class="overflow-hidden prev-state lg:h-fit lg:flex lg:justify-center lg:items-center lg:pr-6"
                 id="links">
-                <li class="py-0.5 px-2 w-fit lg:py-0 lg:px-4 text-lg">Meniu</li>
-                <li class="py-0.5 px-2 w-fit lg:py-0 lg:px-4 text-lg">Parodos</li>
-                <li class="py-0.5 px-2 w-fit lg:py-0 lg:px-4 text-lg">Apie mus</li>
-                <li class="py-0.5 px-2 w-fit lg:py-0 lg:px-4 text-lg">Kontaktai</li>
-                <li class="py-0.5 px-2 w-fit lg:py-0 lg:px-4 flex items-center text-sm"><span>LT</span>/<span>EN</span>
+                <li class="py-0.5 px-2 text-lg w-fit lg:px-4 lg:py-4"><a
+                        class="relative after:absolute after:bg-primary after:h-1 after:w-0 after:left-0 after:bottom-[-0.3rem] after:hover:w-full after:duration-[0.5s] hover:text-slate-600"
+                        href="#">Meniu</a></li>
+                <li class="py-0.5 px-2 text-lg w-fit lg:px-4 lg:py-4"><a
+                        class="relative after:absolute after:bg-primary after:h-1 after:w-0 after:left-0 after:bottom-[-0.3rem] after:hover:w-full after:duration-[0.5s] hover:text-slate-600"
+                        href="#">Parodos</a></li>
+                <li class="py-0.5 px-2 text-lg w-fit lg:px-4 lg:py-4"><a
+                        class="relative after:absolute after:bg-primary after:h-1 after:w-0 after:left-0 after:bottom-[-0.3rem] after:hover:w-full after:duration-[0.5s] hover:text-slate-600"
+                        href="#">Apie mus</a></li>
+                <li class="py-0.5 px-2 text-lg w-fit lg:px-4 lg:py-4"><a
+                        class="relative after:absolute after:bg-primary after:h-1 after:w-0 after:left-0 after:bottom-[-0.3rem] after:hover:w-full after:duration-[0.5s] hover:text-slate-600"
+                        href="#">Kontaktai</a></li>
+                <!-- Language toggle -->
+                <li class="py-0.5 px-2 w-fit lg:py-0 lg:px-4 flex items-center text-sm"><span
+                        class="cursor-pointer hover:text-slate-600">LT</span>/<span class="cursor-pointer hover:text-slate-600">EN</span>
                 </li>
             </ul>
         </nav>
@@ -151,7 +163,8 @@
                     <source srcset="../img/About 2.webp" type="image/webp">
                     <img class="w-full" src="../img/About 2.jpg" alt="virtuvės darbuotojai laikantys augalus">
                 </picture>
-                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">Gerbiame ne tik žmones, bet ir gamtą. Vieta
+                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">Gerbiame ne tik žmones, bet ir
+                    gamtą. Vieta
                     yra viena seniausių vegetariškų kavinių Vilniuje, o 2022 ji tapo veganiška. Mums labai rūpi gamta ir
                     joje esanti gyvybė, todėl rūšiuojame, stengiamės rinktis tik etiškus produktus, kuo mažiau maisto
                     išsimesti, skatiname atsinešti savo išsinešimo indelius ir t.t.
@@ -162,7 +175,8 @@
                     <source srcset="../img/About 3.webp" type="image/webp">
                     <img class="w-full" src="../img/About 3.jpg" alt="nuotrauka iš Linos Ziz parodos">
                 </picture>
-                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">Mūsų baltos kavinės sienos papuoštos menu,
+                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">Mūsų baltos kavinės sienos
+                    papuoštos menu,
                     todėl nusprendėme Vietoje rengti parodas. Tai dažniausiai būna pradedančių kūrėjų darbai
                     (fotografija tapyba, grafika ir kt.), tačiau turėjome ir žymaus Lietuvos tapytojo Aloyzo
                     Stasiulevičiaus parodą. Tad jei ir tu norėtum pas mus surengti savo parodą, susisiek !
