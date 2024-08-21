@@ -16,16 +16,15 @@
 
 <!-- Check Browser Compatibility -->
 <!-- Don't Forget To Add Links -->
-<!-- Don't Forget Button Hover Effect -->
 
 <body class="roboto-mono-normal">
     <header class="sticky top-0">
-        <nav class="bg-white flex flex-col flex-wrap lg:flex-row lg:items-center border-2 border-red-500">
+        <nav class="bg-white flex flex-col flex-wrap lg:flex-row lg:items-center">
             <div class="flex justify-between items-center px-3 py-6 lg:grow lg:px-0">
                 <a class="lg:pl-6" href="#section1">
-                    <picture> 
+                    <picture>
                         <source srcset="../img/svg/Logo.svg" media="(min-width: 1024px)">
-                        <img src="../img/svg/Mobile_logo.svg" alt="vieta logotipas" class="cursor-pointer" id="logo"/>
+                        <img src="../img/svg/Mobile_logo.svg" alt="vieta logotipas" class="cursor-pointer" id="logo" />
                     </picture>
                 </a>
                 <img class="lg:hidden cursor-pointer" src="../img/svg/Hamburger_menu.svg"
@@ -49,19 +48,20 @@
                 <!-- Language toggle -->
                 <!-- Separate LT/EN On Mobile Displays -->
                 <li class="py-0.5 px-2 w-fit lg:py-0 lg:px-4 flex items-center text-sm"><span
-                        class="cursor-pointer hover:text-slate-600">LT</span>/<span class="cursor-pointer hover:text-slate-600">EN</span>
+                        class="cursor-pointer hover:text-slate-600">LT</span>/<span
+                        class="cursor-pointer hover:text-slate-600">EN</span>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="lg:grid lg:grid-cols-12 lg:justify-center lg:items-center border-2 border-blue-500" id="section1">
+        <section class="lg:grid lg:grid-cols-12 lg:justify-center lg:items-center " id="section1">
             <div class="mb-8 ml-[10%] lg:ml-0 lg:col-[1/8] lg:flex lg:justify-center">
                 <div class="max-w-md">
                     <h1 class="roboto-mono-bold text-5xl py-4">
                         Vieta
                         - veganiška kavinė ir parodų erdvė</h1>
-                    <button class="open-sans-normal text-xl bg-primary p-2 lg:py-2.5 lg:px-4">Susisiekime</button>
+                    <button class="open-sans-normal text-xl bg-primary p-2 lg:py-2.5 lg:px-4 duration-[0.5s] ease-in-out hover:text-white hover:bg-accent">Susisiekime</button>
                 </div>
             </div>
             <picture class="lg:col-[8/13]">
@@ -70,7 +70,7 @@
                     src="../img/Hero_section.jpg" alt="sausainių nuotrauka">
             </picture>
         </section>
-        <section class="bg-secondary border-2 border-blue-500" id="section2">
+        <section class="bg-secondary " id="section2">
             <h2 class=" text-center text-4xl roboto-mono-bold py-4 sm:py-8">Meniu</h2>
             <div class="pb-12">
                 <h4 class="text-center text-2xl roboto-mono-medium ">Užkandžiai</h4>
@@ -123,14 +123,15 @@
                     Mėgaukitės
                     mūsų maistu
                     neišeidami iš namų.</h4>
-                <button class="open-sans-normal text-xl bg-primary p-2 lg:py-2.5 lg:px-4">Užsisakyk dabar</button>
+                <button class="open-sans-normal text-xl bg-primary p-2 lg:py-2.5 lg:px-4 duration-[0.5s] ease-in-out hover:text-white hover:bg-accent">Užsisakyk dabar</button>
             </div>
             <picture>
                 <source srcset="../img/Wolt.webp" type="image/webp">
                 <img class="w-full" src="../img/Wolt.jpg" alt="wolt mobiliosios aplikacijos nuotrauka">
             </picture>
         </section>
-        <section class="w-[min(90%,_80rem)] mx-auto gap-16 grid grid-cols-1 my-32 lg:grid-cols-2 items-center" id="section3">
+        <section class="w-[min(90%,_80rem)] mx-auto gap-16 grid grid-cols-1 my-32 lg:grid-cols-2 items-center"
+            id="section3">
             <div class="my-12 my-4 max-w-lg lg:order-2">
                 <h2 class="roboto-mono-bold text-4xl text-left w-min">Parodos pavadinimas
                 </h2>
@@ -138,14 +139,14 @@
                     Nesvarbu, ar jums patinka puikus maistas, ar menas, mūsų ekspozicijos siūlo nepakartojamą aplinką,
                     kuria galėsite mėgautis kiekvieną kartą, kai prie mūsų prisijungsite.
                 </h4>
-                <button class="open-sans-normal text-xl bg-primary p-2 lg:py-2.5 lg:px-4">Skaityti plačiau</button>
+                <button class="open-sans-normal text-xl bg-primary p-2 lg:py-2.5 lg:px-4 duration-[0.5s] ease-in-out hover:text-white hover:bg-accent">Skaityti plačiau</button>
             </div>
             <picture>
                 <source srcset="../img/Art.webp" type="image/webp">
                 <img class="w-full" src="../img/Art.png" alt="parodos nuotrauka">
             </picture>
         </section>
-        <section class="w-[min(90%,_80rem)] mx-auto grid grid-cols-1 items-center lg:gap-20 my-32 border-2 border-blue-500" id="section4">
+        <section class="w-[min(90%,_80rem)] mx-auto grid grid-cols-1 items-center lg:gap-20 my-32 " id="section4">
             <div class="my-12 my-4 max-w-lg">
                 <h2 class="roboto-mono-bold text-4xl text-left">Apie mus</h2>
             </div>
