@@ -1,11 +1,12 @@
 'use strict';
 
 const logo = document.getElementById('logo');
+const logoFooter = document.getElementById('logoFooter');
+const callToAction = document.getElementById('callToAction');
 const menu = document.getElementById("menuIcon");
 const linkContainer = document.getElementById("linkContainer");
-const navItems = document.querySelectorAll("#linkContainer > li > a")
-const navbar = document.querySelector('nav')
-const navbarHeight = navbar.offsetHeight
+const navbar = document.querySelector('nav');
+const navbarHeight = navbar.offsetHeight;
 
 // Toggles Navbar On Mobile
 menu.addEventListener("click", () => {
@@ -20,12 +21,6 @@ const scroll = function(element) {
         behavior: 'smooth',
     })
 }
-logo.addEventListener('click', function(e) {
-    e.preventDefault()
-    const anchor = e.target.closest('a')
-    scroll(anchor)
-})
-
 // Event Delegation
 navbar.addEventListener('click', function(e) {
     e.preventDefault()
@@ -33,4 +28,22 @@ navbar.addEventListener('click', function(e) {
         scroll(e.target)
     }
 });
+// Call To Action (Depends)
+callToAction.addEventListener('click', function(e) {
+    e.preventDefault()
+    scroll(e.target)
+})
+
+// Logo
+logo.addEventListener('click', function(e) {
+    e.preventDefault()
+    const anchor = e.target.closest('a')
+    scroll(anchor)
+})
+// Footer Logo
+logoFooter.addEventListener('click', function(e) {
+    e.preventDefault()
+    const anchor = e.target.closest('a')
+    scroll(anchor)
+})
 
