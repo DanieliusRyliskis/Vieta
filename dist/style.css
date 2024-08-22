@@ -656,6 +656,10 @@ video {
   width: min(80%, 100rem);
 }
 
+.w-\[min\(80\%\2c _80rem\)\] {
+  width: min(80%, 80rem);
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -702,6 +706,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-start {
+  justify-items: start;
 }
 
 .justify-items-center {
