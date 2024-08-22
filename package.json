@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+     "test:chrome": "npx playwright test --headed --browser=chromium",
+    "test:firefox": "npx playwright test --headed --browser=firefox",
+    "test:safari": "npx playwright test --headed --browser=webkit",
     "dev": "concurrently \"npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch\" \"live-server --open=dist/index.html\""
   },
   "author": "Daniel",
   "license": "ISC",
   "devDependencies": {
+    "@playwright/test": "^1.46.1",
     "tailwindcss": "^3.4.7"
   }
 }
