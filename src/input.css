@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.roboto-mono-light {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 .roboto-mono-normal {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
@@ -51,5 +57,5 @@
   transition-duration: 1s;
 }
 .active {
-  height: 8.4rem;
+  height: 9.5rem;
 }

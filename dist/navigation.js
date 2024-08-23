@@ -23,8 +23,8 @@ const scroll = function(element) {
 }
 // Event Delegation
 navbar.addEventListener('click', function(e) {
-    e.preventDefault()
-    if (e.target.tagName === 'A') {
+    if (e.target.tagName === 'A' && e.target.id !== 'languageToggle') {
+        e.preventDefault()
         scroll(e.target)
     }
 });

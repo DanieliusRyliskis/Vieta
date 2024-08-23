@@ -630,6 +630,10 @@ video {
   width: 80%;
 }
 
+.w-\[min\(80\%\2c _100rem\)\] {
+  width: min(80%, 100rem);
+}
+
 .w-\[min\(90\%\2c _80rem\)\] {
   width: min(90%, 80rem);
 }
@@ -648,18 +652,6 @@ video {
   width: min-content;
 }
 
-.w-\[min\(80\%\2c _120rem\)\] {
-  width: min(80%, 120rem);
-}
-
-.w-\[min\(80\%\2c _100rem\)\] {
-  width: min(80%, 100rem);
-}
-
-.w-\[min\(80\%\2c _80rem\)\] {
-  width: min(80%, 80rem);
-}
-
 .max-w-lg {
   max-width: 32rem;
 }
@@ -676,16 +668,12 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -708,12 +696,12 @@ video {
   justify-content: space-between;
 }
 
-.justify-items-start {
-  justify-items: start;
-}
-
 .justify-items-center {
   justify-items: center;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-16 {
@@ -726,10 +714,6 @@ video {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .self-start {
@@ -802,28 +786,16 @@ video {
   padding-bottom: 2rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-left {
@@ -887,6 +859,13 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.roboto-mono-light {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 .roboto-mono-normal {
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
@@ -941,7 +920,7 @@ video {
 }
 
 .active {
-  height: 8.4rem;
+  height: 9.5rem;
 }
 
 .after\:absolute::after {
@@ -1029,10 +1008,6 @@ video {
 
   .lg\:row-\[1\/3\] {
     grid-row: 1/3;
-  }
-
-  .lg\:row-\[1\/2\] {
-    grid-row: 1/2;
   }
 
   .lg\:my-0 {
@@ -1147,6 +1122,10 @@ video {
     padding-bottom: 4rem;
   }
 
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
   .lg\:pl-6 {
     padding-left: 1.5rem;
   }
@@ -1157,10 +1136,6 @@ video {
 
   .lg\:pt-8 {
     padding-top: 2rem;
-  }
-
-  .lg\:pb-24 {
-    padding-bottom: 6rem;
   }
 
   .lg\:text-left {

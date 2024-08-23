@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- change default language -->
-<html lang="lt">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -24,33 +24,34 @@
                 <a class="lg:pl-6" href="#section1">
                     <picture>
                         <source srcset="../img/svg/Logo.svg" media="(min-width: 1024px)">
-                        <img src="../img/svg/Mobile_logo.svg" alt="vieta logotipas" class="cursor-pointer" id="logo" />
+                        <img src="../img/svg/Mobile_logo.svg" alt="Vieta logo" class="cursor-pointer" id="logo" />
                     </picture>
                 </a>
                 <img class="lg:hidden cursor-pointer" src="../img/svg/Hamburger_menu.svg"
-                    alt="Piktograma, kuri atidaro puslapio navigaciją" id="menuIcon" />
+                    alt="Icon that opens the navigation" id="menuIcon" />
             </div>
             <ul class="overflow-hidden prev-state lg:h-fit lg:flex lg:justify-center lg:items-center lg:pr-6"
                 id="linkContainer">
                 <li class="py-0.5 px-2 text-lg w-fit lg:px-4 lg:py-4"><a
                         class="relative after:absolute after:bg-primary after:h-1 after:w-0 after:left-0 after:bottom-[-0.3rem] lg:after:hover:w-full after:duration-[0.5s] hover:text-slate-600"
-                        href="#section2">Meniu</a></li>
+                        href="#section2">Menu</a></li>
                 <li class="py-0.5 px-2 text-lg w-fit lg:px-4 lg:py-4"><a
                         class="relative after:absolute after:bg-primary after:h-1 after:w-0 after:left-0 after:bottom-[-0.3rem] lg:after:hover:w-full after:duration-[0.5s] hover:text-slate-600"
-                        href="#section3">Parodos</a></li>
+                        href="#section3">Exhibitions</a></li>
                 <li class="py-0.5 px-2 text-lg w-fit lg:px-4 lg:py-4"><a
                         class="relative after:absolute after:bg-primary after:h-1 after:w-0 after:left-0 after:bottom-[-0.3rem] lg:after:hover:w-full after:duration-[0.5s] hover:text-slate-600"
-                        href="#section4">Apie mus</a></li>
+                        href="#section4">About us</a></li>
                 <li class="py-0.5 px-2 text-lg w-fit lg:px-4 lg:py-4"><a
                         class="relative after:absolute after:bg-primary after:h-1 after:w-0 after:left-0 after:bottom-[-0.3rem] lg:after:hover:w-full after:duration-[0.5s] hover:text-slate-600"
-                        href="#section5">Kontaktai</a></li>
+                        href="#section5">Contact</a></li>
 
                 <!-- Language toggle -->
                 <!-- Separate LT/EN On Mobile Displays -->
                 <li class="text-sm py-0.5 px-2 w-fit lg:py-0 lg:px-4 flex flex-col lg:flex-row">
-                    <span class="roboto-mono-bold cursor-pointer hover:text-slate-600">LT</span>
+                    <a class="roboto-mono-light cursor-pointer hover:text-slate-600" href="./index.html"
+                        id="languageToggle">LT</a>
                     <span class="hidden lg:inline-block">/</span>
-                    <a class="roboto-mono-light cursor-pointer hover:text-slate-600" href="./en.html" id="languageToggle">EN</a>
+                    <span class="roboto-mono-bold cursor-pointer hover:text-slate-600">EN</span>
                 </li>
             </ul>
         </nav>
@@ -60,172 +61,167 @@
             <div class="mb-8 ml-[10%] lg:ml-0 lg:col-[1/8] lg:flex lg:justify-center">
                 <div class="max-w-md">
                     <h1 class="roboto-mono-bold text-5xl py-4">
-                        Vieta
-                        - veganiška kavinė ir parodų erdvė</h1>
+                        Vieta - vegan café and exhibition space</h1>
                     <a class="open-sans-normal text-xl bg-primary inline-block p-2 lg:py-2.5 lg:px-4 cursor-pointer duration-[0.5s] ease-in-out hover:text-white hover:bg-accent"
-                        href="#section5" id="callToAction">Susisiekime</a>
+                        href="#section5" id="callToAction">Contact us</a>
                 </div>
             </div>
             <picture class="lg:col-[8/13]">
                 <source srcset="../img/Hero_section.webp" type="image/webp">
                 <img class="w-[80%] h-auto lg:h-[90.8vh] w-full lg:object-cover" loading="lazy"
-                    src="../img/Hero_section.jpg" alt="sausainių nuotrauka">
+                    src="../img/Hero_section.jpg" alt="Photo of cookies">
             </picture>
         </section>
         <!-- Menu -->
         <section class="bg-secondary " id="section2">
-            <h2 class=" text-center text-4xl roboto-mono-bold py-4 sm:py-8">Meniu</h2>
+            <h2 class=" text-center text-4xl roboto-mono-bold py-4 sm:py-8">MENU</h2>
             <div>
                 <div class="pb-12 lg:pb-24">
-                    <h4 class="roboto-mono-medium text-center text-2xl pb-8">UŽKANDŽIAI</h4>
+                    <h4 class="roboto-mono-medium text-center text-2xl pb-8">SNACKS</h4>
                     <ul class="w-[min(80%,_100rem)] mx-auto grid gap-10 grid-cols-1 lg:grid-cols-2">
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">HUMUSO LĖKŠTĖ <span class="lg:hidden">6.50€</span></h5>
+                            <h5 class="text-xl text-center col-[1/2]">HUMMUS PLATE <span class="lg:hidden">6.50€</span>
+                            </h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">6.50€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">avinžirniai,kalendra,
-                                žemės
-                                riešutų kremas, česnakas, citrinų sultys, agurkų ir
-                                morkų
-                                lazdelės, sezamas, rukola, česnakinė duonelė</h6>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">chickpeas, coriander,
+                                peanut butter, garlic, lemon juice, cucumber and carrot sticks,
+                                rucola, sesame seeds, garlic bread</h6>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">MARINUOTOS ALYVUOGĖS <span class="lg:hidden">6.00€</span></h5>
+                            <h5 class="text-xl text-center col-[1/2]">MARINATED OLIVES<span
+                                    class="lg:hidden">6.00€</span></h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">6.00€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">alyvuogės, česnakas,
-                                alyvuogių aliejus,
-                                rozmarinas, čiobrelis, citrina, agavos sirupas,
-                                česnakinė duonelė</h6>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">rosemary, thyme, lemon,
+                                agave syrup, olive oil, olives, garlic, garlic bread</h6>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">BUROKĖLIŲ KARPAČIO <span class="lg:hidden">7.20€</span></h5>
+                            <h5 class="text-xl text-center col-[1/2]">BEETROOT CARPACCIO <span
+                                    class="lg:hidden">7.20€</span></h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">7.20€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">burokėliai, augalinė
-                                feta, sezamas,
-                                rukola, graikiniai riešutai, balzamikas, alyvuogių
-                                aliejus, česnakinė duonelė</h6>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">beetroot, sesame seeds,
+                                vegan feta, rucola, walnuts, olive oil, balsamic vinegar, garlic
+                                bread</h6>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">NAČIOS <span class="lg:hidden">7.50€</span></h5>
+                            <h5 class="text-xl text-center col-[1/2]">NACHOS <span class="lg:hidden">7.50€</span></h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">7.50€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">tortilijų traškučiai,
-                                sojos čili,
-                                augalinis sūris, uoginė paprika, kalendra, laimas</h6>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">tortilla chips, soy
+                                chilli, vegan cheese, jalapeño, coriander, limetortilla chips, soy chilli, vegan cheese,
+                                jalapeño, coriander, lime</h6>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">SAULĖJE DŽIOVINTŲ POMIDORŲ UŽKANDUKAS <span
+                            <h5 class="text-xl text-center col-[1/2]">SUN-DRIED TOMATOES SNACK <span
                                     class="lg:hidden">6.70€</span></h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">6.70€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">saulėje džiovinti
-                                pomidorai, augalinis
-                                sūris, sojos majonezas, naminis pesto, česnakas,
-                                rukola, balzamikas, česnakinė duonelė</h6>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">sun-dried tomatoes,
+                                vegan cheese, garlic, homemade pesto, rucola, soy mayonnaise,
+                                garlic bread</h6>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
                             <h5 class="text-xl text-center col-[1/2]">EDAMAME <span class="lg:hidden">4.00€</span></h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">4.00€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">edamame, žemės riešutai,
-                                lengvai aštrus sojos padažas</h6>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">edamame, peanuts,
+                                slightly spicy soy sauce</h6>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">GRUZDINTOS BULVYTĖS <span class="lg:hidden">2.50€</span></h5>
+                            <h5 class="text-xl text-center col-[1/2]">FRENCH FRIES <span class="lg:hidden">2.50€</span>
+                            </h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">2.50€</h5>
                             <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start"></h6>
                         </li>
                     </ul>
                 </div>
                 <div class="pb-12 lg:pb-24">
-                    <h4 class="roboto-mono-medium text-center text-2xl pb-8">PAGRINDINIAI PATIEKALAI</h4>
+                    <h4 class="roboto-mono-medium text-center text-2xl pb-8">MAIN DISHES</h4>
                     <ul class="w-[min(80%,_100rem)] mx-auto grid gap-10 grid-cols-1 lg:grid-cols-2">
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">UŽKEPTAS TOFU <span class="lg:hidden">10.00€</span></h5>
-                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">10.00€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">marinuotas tofu,
-                                maistinės mielės, naminis pesto, saulėje džiovinti pomidorai, bazilikas,
-                                česnakinis aliejus, salotų lapai, įvairios daržovės, sėklų mišinys, augalinis
-                                parmezanas,
-                                baby bulvytės</h6>
-                        </li>
-                        <li
-                            class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">ĮDARYTAS PORTOBELLO GRYBAS <span
-                                    class="lg:hidden">12.00€</span></h5>
-                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">12.00€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">marinuotas portobello
-                                grybas, tofu kremas, saulėje džiovinti pomidorai, sojos majonezas,
-                                gruzdinti svogūnai, karamelizuoti svogūnai, naminis pesto, salotų lapai, augalinis
-                                parmezanas, įvairios daržovės, sėklų mišinys, česnakinė duonelė, tofu “paštetas”, baby
-                                bulvytės</h6>
-                        </li>
-                        <li
-                            class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">“BEYOND MEAT” KEPSNYS <span class="lg:hidden">13.50€</span>
-                            </h5>
-                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">13.50€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">“beyond meat”
-                                paplotėlis, burokėliai, rukola, bulvytės fri, daržovių iešmelis, bazilikų
-                                aliejus, balzamikas, baltasis padažas, marinuoti svogūnėliai, tempeh</h6>
-                        </li>
-                        <li
-                            class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">UŽKEPTOS BABY BULVYTĖS SU KREIVABUDĖMIS <span
+                            <h5 class="text-xl text-center col-[1/2]">BAKED TOFU STEAK <span
                                     class="lg:hidden">10.00€</span></h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">10.00€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">baby bulvytės, plėšytos
-                                BBQ kreivabudės, augalinis parmezano sūris, česnakinis aliejus,
-                                gruzdinti svogūnai, baltasis padažas, žalumynai, česnakinė duonelė su augaliniu sūriu
-                            </h6>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">marinated tofu,
+                                nutritional yeast, mixed salad, various veg, sun-dried tomatoes,
+                                garlic sauce, basil, homemade pesto, mixed seeds, vegan parmesan cheese, baby
+                                potatoes</h6>
+                        </li>
+                        <li
+                            class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
+                            <h5 class="text-xl text-center col-[1/2]">STUFED PORTOBELLO <span
+                                    class="lg:hidden">12.00€</span></h5>
+                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">12.00€</h5>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">marinated portobello
+                                mushroom, tofu cream, sun-dried tomatoes, homemade pesto, soy
+                                mayonnaise, fried onions, caramelised onions, vegan parmesan cheese, mixed salad,
+                                various veg, mixed seeds, garlic bread, vegan pate, baby potatoes</h6>
+                        </li>
+                        <li
+                            class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
+                            <h5 class="text-xl text-center col-[1/2]">“BEYOND MEAT” STEAK <span
+                                    class="lg:hidden">13.50€</span>
+                            </h5>
+                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">13.50€</h5>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">“beyond meat” steak,
+                                beetroot, rucola, fries, tempeh, vegetable skewers, basil oil,
+                                balsamic, white sauce, marinated onions</h6>
+                        </li>
+                        <li
+                            class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
+                            <h5 class="text-xl text-center col-[1/2]">BAKED BABY POTATOES WITH OYSTER MUSHROOMS <span
+                                    class="lg:hidden">10.00€</span></h5>
+                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">10.00€</h5>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">baby potatoes, pulled
+                                BBQ oyster mushrooms, vegan parmesan cheese, garlic oil, fried
+                                onions, white sauce, greens, vegan cheesy garlic bread </h6>
                         </li>
                     </ul>
                 </div>
                 <div class="pb-12 lg:pb-24">
-                    <h4 class="roboto-mono-medium text-center text-2xl pb-8">SALOTOS</h4>
+                    <h4 class="roboto-mono-medium text-center text-2xl pb-8">SALAD</h4>
                     <ul class="w-[min(80%,_100rem)] mx-auto grid gap-10 grid-cols-1 lg:grid-cols-2">
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">SALOTOS SU MOCARELA <span class="lg:hidden">8.40€</span></h5>
+                            <h5 class="text-xl text-center col-[1/2]">SALAD WITH MOZZARELLA <span
+                                    class="lg:hidden">8.40€</span></h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">8.40€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">salotų lapai, rukola,
-                                sultenė, burokėlių lapai, pomidorai, agurkai, cukinija, paprika,
-                                ridikėliai, saulėje džiovinti pomidorai, įvairios sėklos, baziliko padažas, naminis
-                                pesto,
-                                augalinė mocarela, česnakinė duonelė</h6>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">lettuce, rucola, lamb’s
+                                lettuce, beetroot leaves, tomato, cucumber, zucchini, bell
+                                pepper, radish, sun-dried tomatoes, mixed seeds, basil sauce, homemade pesto, vegan
+                                mozzarella, garlic bread</h6>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">SALOTOS SU HUMUSU IR RIEŠUTAIS <span
+                            <h5 class="text-xl text-center col-[1/2]">SALAD WITH HUMMUS AND NUTS <span
                                     class="lg:hidden">7.90€</span></h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">7.90€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">salotų lapai, rukola,
-                                sultenė, burokėlių lapai, humusas, morkos, agurkai, cukinija,
-                                ridikėliai, įvairios sėklos, žemės riešutai, riešutinis padažas, česnakinė duonelė</h6>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">lettuce, rucola, lamb’s
+                                lettuce, beetroot leaves, hummus, carrots, cucumber,
+                                zucchini, radish, mixed seeds, peanut butter sauce, garlic bread</h6>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">GRAIKIŠKOS SALOTOS <span class="lg:hidden">8.30€</span>
+                            <h5 class="text-xl text-center col-[1/2]">GREEK SALAD <span class="lg:hidden">8.30€</span>
                             </h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">8.30€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">salotų lapai, rukola,
-                                sultenė, burokėlių lapai, pomidorai, agurkai, cukinija, paprika,
-                                ridikėliai, alyvuogės, mėlynieji svogūnai, įvairios sėklos, baziliko padažas,
-                                balzamikas,
-                                augalinė feta, česnakinė duonelė</h6>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">lettuce, rucola, lamb’s
+                                lettuce, beetroot leaves, tomato, cucumber, zucchini, bell
+                                pepper, radish, olives, onions, mixed seeds, basil sauce, balsamic vinegar, feta,
+                                garlic bread</h6>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">SALOTOS SU RIEŠUTAIS IR SĖKLOMIS <span
+                            <h5 class="text-xl text-center col-[1/2]">SALAD WITH PEANUTS AND SEEDS <span
                                     class="lg:hidden">7.80€</span></h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">7.80€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start"> salotų lapai, rukola,
-                                sultenės, burokėlių lapai, agurkai, cukinija, ridikėliai, žemės
-                                riešutai, grakiniai riešutai, sėklų mišinys, riešutinis padažas, česnakinė duonelė </h6>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start"> lettuce, rucola, lamb’s
+                                lettuce, beetroot leaves, cucumber, radish, zucchini,
+                                carrots, peanuts, mixed seeds, walnuts, peanut butter sauce, garlic bread</h6>
                         </li>
                     </ul>
                 </div>
@@ -234,63 +230,73 @@
                     <ul class="w-[min(80%,_100rem)] mx-auto grid gap-10 grid-cols-1 lg:grid-cols-2">
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">SU HUMUSU IR TEMPEH <span class="lg:hidden">9.20€</span></h5>
-                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">9.20€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">riešutinis padažas,
-                                špinatai, tempeh, humusas, marinuoti svogūnai, pomidorai, augalinis
-                                sūris</h6>
+                            <h5 class="text-xl text-center col-[1/2]">WITH MOZZARELLA AND SUN DRIED TOMATOES <span
+                                    class="lg:hidden">9.00€</span></h5>
+                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">9.00€</h5>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">white sauce, vegan
+                                mozzarella, sun-dried tomatoes, spinach, tomatoes, homemade
+                                pesto, vegan cheese</h6>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">KIMCHEESE <span class="lg:hidden">8.00€</span></h5>
-                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">8.00€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">špinatai, kimchi, sojos
-                                majonezas, česnakas, augalinis sūris</h6>
+                            <h5 class="text-xl text-center col-[1/2]">WITH BLUE CHEESE AND CARAMELISED ONIONS <span
+                                    class="lg:hidden">9.30€</span>
+                            </h5>
+                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">9.30€</h5>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">white sauce, caramelised
+                                onions, spinach, tomatoes, vegan blue cheese, vegan
+                                cheese</h6>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">SU KREIVABUDĖMIS <span class="lg:hidden">8.50€</span>
+                            <h5 class="text-xl text-center col-[1/2]">WITH TOFU CREAM AND VEGETABLES <span
+                                    class="lg:hidden">8.50€</span>
                             </h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">8.50€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">plėšytos kreivabudės,
-                                sojos majonezas, česnakas, augalinis sūris</h6>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">tofu cream, sun-dried
+                                tomatoes, basil, spinach, pickled cucumbers, zucchini, marinated
+                                onions, vegan cheese</h6>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">BOLONIJOS <span class="lg:hidden">8.90€</span></h5>
+                            <h5 class="text-xl text-center col-[1/2]">WITH FETA <span class="lg:hidden">8.90€</span>
+                            </h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]">8.90€</h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">česnakinis aliejus,
-                                špinatai, pomidorai, pomidorų padažas, sojos faršas, balzaminio acto
-                                kremas, bazilikas, augalinis sūris</h6>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start">white sauce, vegan feta,
+                                rucola, tomatoes, balsamic vinegar, blue onion, olives,
+                                vegan cheese</h6>
                         </li>
                     </ul>
                 </div>
                 <!-- Today's Lunch -->
                 <div class="pb-12 lg:pb-24">
-                    <h4 class="roboto-mono-medium text-center text-2xl pb-8">DIENOS PIETŪS</h4>
+                    <h4 class="roboto-mono-medium text-center text-2xl pb-8">TODAY'S LUNCH</h4>
                     <ul class="w-[min(80%,_100rem)] mx-auto grid gap-10 grid-cols-1 lg:grid-cols-2">
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">DARŽOVIŲ MISO <span class="lg:hidden"></span></h5>
-                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start"></h6>
-                        </li>
-                        <li
-                            class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">ŠALTIBARŠČIAI <span class="lg:hidden"></span></h5>
-                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
-                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start"></h6>
-                        </li>
-                        <li
-                            class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">PLOVAS SU SOJA <span class="lg:hidden"></span>
+                            <h5 class="text-xl text-center col-[1/2]">VEGETABLE MISO <span class="lg:hidden"></span>
                             </h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
                             <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start"></h6>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">UŽKEPĖLĖ SU KYNVA <span class="lg:hidden"></span></h5>
+                            <h5 class="text-xl text-center col-[1/2]">COLD BEET SOUP <span class="lg:hidden"></span>
+                            </h5>
+                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start"></h6>
+                        </li>
+                        <li
+                            class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
+                            <h5 class="text-xl text-center col-[1/2]">PILAF WITH SOY <span class="lg:hidden"></span>
+                            </h5>
+                            <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
+                            <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start"></h6>
+                        </li>
+                        <li
+                            class="grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
+                            <h5 class="text-xl text-center col-[1/2]">QUINOA CASSEROLE <span class="lg:hidden"></span>
+                            </h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
                             <h6 class="text-slate-600 text-sm text-center col-[1/2] self-start"></h6>
                         </li>
@@ -299,12 +305,13 @@
                     <ul class="w-[min(80%,_100rem)] mx-auto grid gap-10 grid-cols-1 lg:grid-cols-2">
                         <li
                             class="grid grid-cols-1 grid-rows-1 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">HUMUSAS <span class="lg:hidden"></span></h5>
+                            <h5 class="text-xl text-center col-[1/2]">HUMMUS <span class="lg:hidden"></span></h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-1 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">NAMINIS PESTO <span class="lg:hidden"></span></h5>
+                            <h5 class="text-xl text-center col-[1/2]">HOMEMADE PESTO <span class="lg:hidden"></span>
+                            </h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
                         </li>
                         <li
@@ -314,39 +321,39 @@
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
                         </li>
                     </ul>
-                    <h4 class="roboto-mono-medium text-center text-2xl pb-8">DESERTAI</h4>
+                    <h4 class="roboto-mono-medium text-center text-2xl pb-8">DESERTS</h4>
                     <ul class="w-[min(80%,_100rem)] mx-auto grid gap-10 grid-cols-1 lg:grid-cols-2">
                         <li
                             class="grid grid-cols-1 grid-rows-1 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">KOKOSIUKAI <span class="lg:hidden"></span></h5>
+                            <h5 class="text-xl text-center col-[1/2]">COCONUTS <span class="lg:hidden"></span></h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-1 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">TRIUFELIAI <span class="lg:hidden"></span></h5>
+                            <h5 class="text-xl text-center col-[1/2]">TRUFFLE <span class="lg:hidden"></span></h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-1 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">DATULĖS ŠOKOLADE <span class="lg:hidden"></span>
+                            <h5 class="text-xl text-center col-[1/2]">DATES IN CHOCOLATE <span class="lg:hidden"></span>
                             </h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-1 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">TINGYNYS <span class="lg:hidden"></span>
+                            <h5 class="text-xl text-center col-[1/2]">"TINGYNYS" <span class="lg:hidden"></span>
                             </h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-1 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">NAMINIS SNICKERS <span class="lg:hidden"></span>
+                            <h5 class="text-xl text-center col-[1/2]">HOMEMADE SNICKER <span class="lg:hidden"></span>
                             </h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
                         </li>
                         <li
                             class="grid grid-cols-1 grid-rows-1 justify-items-center items-center lg:grid-cols-[4fr_1fr]">
-                            <h5 class="text-xl text-center col-[1/2]">OBUOLIŲ PYRAGAS <span class="lg:hidden"></span>
+                            <h5 class="text-xl text-center col-[1/2]">APPLE PIE <span class="lg:hidden"></span>
                             </h5>
                             <h5 class="text-xl hidden lg:inline-block lg:col-[2/3] lg:row-[1/3]"></h5>
                         </li>
@@ -356,82 +363,71 @@
         </section>
         <section class="w-[min(90%,_80rem)] mx-auto gap-16 grid grid-cols-1 my-32 lg:grid-cols-2 items-center">
             <div class="my-12 my-4 max-w-lg">
-                <h2 class="roboto-mono-bold text-4xl text-left w-min">Užsisakykite internetu
-                </h2>
-                <h4 class="open-sans-normal text-2xl my-4">Išalkote, bet negalite
-                    atvykti pas mus? Ne bėda!
-                    Mėgaukitės
-                    mūsų maistu
-                    neišeidami iš namų.</h4>
+                <h2 class="roboto-mono-bold text-4xl text-left w-min">Order Online</h2>
+                <h4 class="open-sans-normal text-2xl my-4">Are you hungry but can't visit us? No problem! Enjoy our food
+                    without leaving home.</h4>
                 <a class="open-sans-normal text-xl bg-primary inline-block p-2 lg:py-2.5 lg:px-4 cursor-pointer duration-[0.5s] ease-in-out hover:text-white hover:bg-accent"
                     href="https://wolt.com/lt/ltu/vilnius/restaurant/vieta-sv-ignoto-g" target="_blank"
-                    rel="noopener noreferrer">Užsisakyk dabar</a>
+                    rel="noopener noreferrer">Order now</a>
             </div>
             <picture>
                 <source srcset="../img/Wolt.webp" type="image/webp">
-                <img class="w-full" src="../img/Wolt.jpg" alt="wolt mobiliosios aplikacijos nuotrauka">
+                <img class="w-full" src="../img/Wolt.jpg" alt="Picture of Wolt's mobile application">
             </picture>
         </section>
         <section class="w-[min(90%,_80rem)] mx-auto gap-16 grid grid-cols-1 my-32 lg:grid-cols-2 items-center"
             id="section3">
             <div class="my-12 my-4 max-w-lg lg:order-2">
-                <h2 class="roboto-mono-bold text-4xl text-left w-min">Parodos pavadinimas
-                </h2>
-                <h4 class="open-sans-normal text-2xl my-4">Nepraleiskite progos išvysti nepakartojamų ekspozicijų.
-                    Nesvarbu, ar jums patinka puikus maistas, ar menas, mūsų ekspozicijos siūlo nepakartojamą aplinką,
-                    kuria galėsite mėgautis kiekvieną kartą, kai prie mūsų prisijungsite.
-                </h4>
+                <h2 class="roboto-mono-bold text-4xl text-left w-min">Name of the exhibition</h2>
+                <h4 class="open-sans-normal text-2xl my-4">Don't miss the chance to see unique exhibitions. Whether you
+                    love great food or art, our exhibitions offer a unique environment that you can enjoy every time you
+                    join us.</h4>
                 <a class="open-sans-normal text-xl bg-primary inline-block p-2 lg:py-2.5 lg:px-4 cursor-pointer duration-[0.5s] ease-in-out hover:text-white hover:bg-accent"
-                    href="https://www.facebook.com/people/Vieta/61560650626307/" target="_blank" rel="noopener noreferrer">Skaityti
-                    plačiau</a>
+                    href="https://www.facebook.com/people/Vieta/61560650626307/" target="_blank"
+                    rel="noopener noreferrer">More info</a>
             </div>
             <picture>
                 <source srcset="../img/Art.webp" type="image/webp">
-                <img class="w-full" src="../img/Art.png" alt="parodos nuotrauka">
+                <img class="w-full" src="../img/Art.png" alt="Picture of the exhibition">
             </picture>
         </section>
         <section class="w-[min(90%,_80rem)] mx-auto grid grid-cols-1 items-center lg:gap-20 my-32 " id="section4">
             <div class="my-12 my-4 max-w-lg">
-                <h2 class="roboto-mono-bold text-4xl text-left">Apie mus</h2>
+                <h2 class="roboto-mono-bold text-4xl text-left">About us</h2>
             </div>
             <!-- About Section 1 -->
             <div class="lg:grid lg:grid-cols-2 items-center gap-16">
                 <picture>
                     <source srcset="../img/About_1.webp" type="image/webp">
-                    <img class="w-full" src="../img/About_1.jpg" alt="restorano savininkai stovintys prie įėjimo">
+                    <img class="w-full" src="../img/About_1.jpg" alt="Owners of the restaurant standing near the entrance">
                 </picture>
-                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">
-                    Esame
-                    veganiška
-                    kavinė įsikūrusi Vilniaus širdyje.
-                    Mūsų maistas
-                    žemiškas ir paprastas - dažnai pas mus pabuvę žmonės sako, kad jaučiasi lyg apsilankę pas
-                    močiutę. Norime, kad pas mus ateitumėte lyg į svečius, o ne tiesiog į kavinę. Pagrindinė
-                    taisyklė čia yra pagarba vienas kitam, nesvarbu, kokią rolę užimi šioje vietoje</p>
+                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">We are a vegan café in the heart of
+                    Vilnius. Our food is down-to-earth and simple - people who visit us often say they feel like they're
+                    visiting their grandmother. We want you to feel like you're visiting us, not just a café. The main
+                    rule here is respect for each other, no matter what your role in the place</p>
             </div>
             <!-- About Section 2 -->
             <div class="lg:grid lg:grid-cols-2 items-center gap-16">
                 <picture class="lg:order-2">
                     <source srcset="../img/About_2.webp" type="image/webp">
-                    <img class="w-full" src="../img/About_2.jpg" alt="virtuvės darbuotojai laikantys augalus">
+                    <img class="w-full" src="../img/About_2.jpg" alt="Kitchen staff holding plants and posing near the entrance">
                 </picture>
-                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">Gerbiame ne tik žmones, bet ir
-                    gamtą. Vieta
-                    yra viena seniausių vegetariškų kavinių Vilniuje, o 2022 ji tapo veganiška. Mums labai rūpi gamta ir
-                    joje esanti gyvybė, todėl rūšiuojame, stengiamės rinktis tik etiškus produktus, kuo mažiau maisto
-                    išsimesti, skatiname atsinešti savo išsinešimo indelius ir t.t.
+                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">We respect not only people, but
+                    also nature. The place is one of the oldest vegetarian cafés in Vilnius and became vegan in 2022. We
+                    care deeply about nature and the life in it, which is why we sort, choose only ethical products,
+                    minimise food waste, encourage people to bring their own takeaway containers, etc.</p>
             </div>
             <!-- About Section 3 -->
             <div class="lg:grid lg:grid-cols-2 items-center gap-16">
                 <picture>
                     <source srcset="../img/About_3.webp" type="image/webp">
-                    <img class="w-full" src="../img/About_3.jpg" alt="nuotrauka iš Linos Ziz parodos">
+                    <img class="w-full" src="../img/About_3.jpg" alt="Picture that was taken during Linos Ziz exhibition">
                 </picture>
-                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">Mūsų baltos kavinės sienos
-                    papuoštos menu,
-                    todėl nusprendėme Vietoje rengti parodas. Tai dažniausiai būna pradedančių kūrėjų darbai
-                    (fotografija tapyba, grafika ir kt.), tačiau turėjome ir žymaus Lietuvos tapytojo Aloyzo
-                    Stasiulevičiaus parodą. Tad jei ir tu norėtum pas mus surengti savo parodą, susisiek !
+                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">Our white café walls are decorated
+                    with art, so we decided to host exhibitions on site. These are mostly works by emerging artists
+                    (photography, painting, graphics, etc.), but we also had an exhibition by the famous Lithuanian
+                    painter Aloyzas Stasiulevičius. So if you would like to have your own exhibition with us, get in
+                    touch !</p>
             </div>
         </section>
     </main>
@@ -440,7 +436,7 @@
             <a class="lg:col-[1/4]" href="#section1">
                 <picture>
                     <source srcset="../img/svg/Logo.svg" media="(min-width: 1024px)">
-                    <img src="../img/svg/Mobile_logo.svg" alt="vieta logotipas" class="cursor-pointer mx-auto pt-4"
+                    <img src="../img/svg/Mobile_logo.svg" alt="Vieta logo" class="cursor-pointer mx-auto pt-4"
                         id="logoFooter" />
                 </picture>
             </a>
@@ -448,40 +444,40 @@
             <div class="lg:flex lg:gap-20 lg:col-[5/13] lg:row-[1/3]">
                 <!-- Section 1 -->
                 <div>
-                    <h3 class="text-left text-3xl roboto-mono-medium py-4">Naršyti</h3>
+                    <h3 class="text-left text-3xl roboto-mono-medium py-4">Browse</h3>
                     <ul>
-                        <li class="text-center text-base lg:text-left">Meniu</li>
-                        <li class="text-center text-base lg:text-left">Parodos</li>
-                        <li class="text-center text-base lg:text-left">Apie mus</li>
+                        <li class="text-center text-base lg:text-left">Menu</li>
+                        <li class="text-center text-base lg:text-left">Exhibitions</li>
+                        <li class="text-center text-base lg:text-left">About us</li>
                     </ul>
                 </div>
                 <!-- Section 2 -->
                 <div>
-                    <h3 class="text-center text-3xl roboto-mono-medium py-4 lg:text-left">Darbo laikas</h3>
+                    <h3 class="text-center text-3xl roboto-mono-medium py-4 lg:text-left">Working hours</h3>
                     <ul class="flex justify-center items-center gap-2">
                         <li>
-                            <img src="../img/svg/Clock.svg" alt="laikrodžio piktograma">
+                            <img src="../img/svg/Clock.svg" alt="Clock icon">
                         </li>
                         <div>
-                            <li class="text-base">I-V 11:30-16:00 val.</li>
-                            <li class="text-base">VI-VII nedirbame</li>
+                            <li class="text-base">I-V 11:30-16:00 h.</li>
+                            <li class="text-base">VI-VII closed</li>
                         </div>
                     </ul>
                 </div>
                 <!-- Section 3 -->
                 <div>
-                    <h3 class="text-center roboto-mono-medium text-3xl py-4 lg:text-left">Kontaktai</h3>
+                    <h3 class="text-center roboto-mono-medium text-3xl py-4 lg:text-left">Contacts</h3>
                     <ul>
                         <li class="flex justify-center text-base items-center gap-2 lg:justify-start">
-                            <img src="../img/svg/Location.svg" alt="vietos piktograma">
+                            <img src="../img/svg/Location.svg" alt="Location icon">
                             <span>Šv. Ignoto 12 - 1, Vilnius</span>
                         </li>
                         <li class="flex justify-center text-base items-center gap-2 lg:justify-start">
-                            <img src="../img/svg/Mail.svg" alt="pašto piktograma">
+                            <img src="../img/svg/Mail.svg" alt="Mail icon">
                             <span>sv.vieta@gmail.com</span>
                         </li>
                         <li class="flex justify-center text-base items-center gap-2 lg:justify-start">
-                            <img src="../img/svg/Phone.svg" alt="telefono piktograma">
+                            <img src="../img/svg/Phone.svg" alt="Phone icon">
                             <span>+370 675 03263</span>
                         </li>
                     </ul>
@@ -489,11 +485,12 @@
             </div>
             <!-- Social Media Icons -->
             <div class="flex justify-center gap-4 items-center py-4 lg:gap-6 lg:col-[2/3]">
-                <a href="https://www.facebook.com/people/Vieta/61560650626307/" target="_blank" rel="noopener noreferrer">
-                    <img class="w-8 h-auto" src="../img/svg/Facebook.svg" alt="facebook piktograma">
+                <a href="https://www.facebook.com/people/Vieta/61560650626307/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="w-8 h-auto" src="../img/svg/Facebook.svg" alt="facebook icon">
                 </a>
                 <a href="https://www.instagram.com/sv.vieta/" target="_blank" rel="noopener noreferrer">
-                    <img class="w-8 h-auto" src="../img/svg/Instagram.svg" alt="instagram piktograma">
+                    <img class="w-8 h-auto" src="../img/svg/Instagram.svg" alt="instagram icon">
                 </a>
             </div>
         </div>
