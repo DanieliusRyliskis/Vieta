@@ -362,80 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiKategorijaKategorija extends Schema.CollectionType {
-  collectionName: 'kategorijos';
-  info: {
-    singularName: 'kategorija';
-    pluralName: 'kategorijos';
-    displayName: 'Kategorijos';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Pavadinimas: Attribute.String & Attribute.Required;
-    patiekalai: Attribute.Relation<
-      'api::kategorija.kategorija',
-      'oneToMany',
-      'api::patiekalas.patiekalas'
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::kategorija.kategorija',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::kategorija.kategorija',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiPatiekalasPatiekalas extends Schema.CollectionType {
-  collectionName: 'patiekalai';
-  info: {
-    singularName: 'patiekalas';
-    pluralName: 'patiekalai';
-    displayName: 'Patiekalai';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Pavadinimas: Attribute.String & Attribute.Required;
-    Kaina: Attribute.String & Attribute.Required;
-    Ingredientai: Attribute.Text;
-    kategorijos: Attribute.Relation<
-      'api::patiekalas.patiekalas',
-      'manyToOne',
-      'api::kategorija.kategorija'
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::patiekalas.patiekalas',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::patiekalas.patiekalas',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -862,6 +788,221 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
+export interface ApiKategorijaKategorija extends Schema.CollectionType {
+  collectionName: 'kategorijos';
+  info: {
+    singularName: 'kategorija';
+    pluralName: 'kategorijos';
+    displayName: 'Kategorijos';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Pavadinimas: Attribute.String & Attribute.Required;
+    patiekalai: Attribute.Relation<
+      'api::kategorija.kategorija',
+      'oneToMany',
+      'api::patiekalas.patiekalas'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::kategorija.kategorija',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::kategorija.kategorija',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiKategorijaAnglKategorijaAngl extends Schema.CollectionType {
+  collectionName: 'kategorijos_angl';
+  info: {
+    singularName: 'kategorija-angl';
+    pluralName: 'kategorijos-angl';
+    displayName: 'Kategorijos (angl.)';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Pavadinimas: Attribute.String;
+    patiekalai_angl: Attribute.Relation<
+      'api::kategorija-angl.kategorija-angl',
+      'oneToMany',
+      'api::patiekalas-angl.patiekalas-angl'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::kategorija-angl.kategorija-angl',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::kategorija-angl.kategorija-angl',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiParodaParoda extends Schema.SingleType {
+  collectionName: 'parodos';
+  info: {
+    singularName: 'paroda';
+    pluralName: 'parodos';
+    displayName: 'Paroda';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Pavadinimas: Attribute.String & Attribute.Required;
+    Aprasymas: Attribute.Text & Attribute.Required;
+    Nuotrauka: Attribute.Media<'images'> & Attribute.Required;
+    Nuoroda: Attribute.String & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::paroda.paroda',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::paroda.paroda',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiParodaAnglParodaAngl extends Schema.SingleType {
+  collectionName: 'parodos_angl';
+  info: {
+    singularName: 'paroda-angl';
+    pluralName: 'parodos-angl';
+    displayName: 'Paroda (angl.)';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Pavadinimas: Attribute.String & Attribute.Required;
+    Aprasymas: Attribute.Text & Attribute.Required;
+    Nuotrauka: Attribute.Media<'images'> & Attribute.Required;
+    Nuoroda: Attribute.String & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::paroda-angl.paroda-angl',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::paroda-angl.paroda-angl',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPatiekalasPatiekalas extends Schema.CollectionType {
+  collectionName: 'patiekalai';
+  info: {
+    singularName: 'patiekalas';
+    pluralName: 'patiekalai';
+    displayName: 'Patiekalai';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Pavadinimas: Attribute.String & Attribute.Required;
+    Kaina: Attribute.String & Attribute.Required;
+    Ingredientai: Attribute.Text;
+    kategorijos: Attribute.Relation<
+      'api::patiekalas.patiekalas',
+      'manyToOne',
+      'api::kategorija.kategorija'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::patiekalas.patiekalas',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::patiekalas.patiekalas',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPatiekalasAnglPatiekalasAngl extends Schema.CollectionType {
+  collectionName: 'patiekalai_angl';
+  info: {
+    singularName: 'patiekalas-angl';
+    pluralName: 'patiekalai-angl';
+    displayName: 'Patiekalai (angl.)';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Pavadinimas: Attribute.String & Attribute.Required;
+    Kaina: Attribute.String & Attribute.Required;
+    Ingredientai: Attribute.Text;
+    kategorijos_angl: Attribute.Relation<
+      'api::patiekalas-angl.patiekalas-angl',
+      'manyToOne',
+      'api::kategorija-angl.kategorija-angl'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::patiekalas-angl.patiekalas-angl',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::patiekalas-angl.patiekalas-angl',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -872,8 +1013,6 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::kategorija.kategorija': ApiKategorijaKategorija;
-      'api::patiekalas.patiekalas': ApiPatiekalasPatiekalas;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -882,6 +1021,12 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
+      'api::kategorija.kategorija': ApiKategorijaKategorija;
+      'api::kategorija-angl.kategorija-angl': ApiKategorijaAnglKategorijaAngl;
+      'api::paroda.paroda': ApiParodaParoda;
+      'api::paroda-angl.paroda-angl': ApiParodaAnglParodaAngl;
+      'api::patiekalas.patiekalas': ApiPatiekalasPatiekalas;
+      'api::patiekalas-angl.patiekalas-angl': ApiPatiekalasAnglPatiekalasAngl;
     }
   }
 }

@@ -1044,6 +1044,11 @@ video {
     height: fit-content;
   }
 
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .lg\:grow {
     flex-grow: 1;
   }

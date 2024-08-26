@@ -15,8 +15,8 @@
 </head>
 
 <!-- Tab logo -->
+<!-- Remove w-min From H4 -->
 <!-- Write Commits -->
-<!-- There Is Two Panini In Menu -->
 
 <body class="roboto-mono-normal">
     <header class="sticky top-0">
@@ -82,7 +82,7 @@
         </section>
         <section class="w-[min(90%,_80rem)] mx-auto gap-16 grid grid-cols-1 my-32 lg:grid-cols-2 items-center">
             <div class="my-12 my-4 max-w-lg">
-                <h2 class="roboto-mono-bold text-4xl text-left w-min">Užsisakykite internetu
+                <h2 class="roboto-mono-bold text-4xl text-left">Užsisakykite internetu
                 </h2>
                 <h4 class="open-sans-normal text-2xl my-4">Išalkote, bet negalite
                     atvykti pas mus? Ne bėda!
@@ -101,20 +101,20 @@
         <section class="w-[min(90%,_80rem)] mx-auto gap-16 grid grid-cols-1 my-32 lg:grid-cols-2 items-center"
             id="section3">
             <div class="my-12 my-4 max-w-lg lg:order-2">
-                <h2 class="roboto-mono-bold text-4xl text-left w-min">Parodos pavadinimas
+                <h2 class="roboto-mono-bold text-4xl text-left" id="exhibitionName">Parodos pavadinimas
                 </h2>
-                <h4 class="open-sans-normal text-2xl my-4">Nepraleiskite progos išvysti nepakartojamų ekspozicijų.
+                <h4 class="open-sans-normal text-2xl my-4" id="exhibitionDescription">Nepraleiskite progos išvysti nepakartojamų ekspozicijų.
                     Nesvarbu, ar jums patinka puikus maistas, ar menas, mūsų ekspozicijos siūlo nepakartojamą aplinką,
                     kuria galėsite mėgautis kiekvieną kartą, kai prie mūsų prisijungsite.
                 </h4>
                 <a class="open-sans-normal text-xl bg-primary inline-block p-2 lg:py-2.5 lg:px-4 cursor-pointer duration-[0.5s] ease-in-out hover:text-white hover:bg-accent"
                     href="https://www.facebook.com/people/Vieta/61560650626307/" target="_blank"
-                    rel="noopener noreferrer">Skaityti
+                    rel="noopener noreferrer" id="exhibitionLink">Skaityti
                     plačiau</a>
             </div>
             <picture>
-                <source srcset="../img/Art.webp" type="image/webp">
-                <img class="w-full" src="../img/Art.png" alt="parodos nuotrauka">
+                <source src="" id="exhibitionPhoto">
+                <img class="w-full" src="../img/Art.png" alt="Parodos nuotrauka">
             </picture>
         </section>
         <section class="w-[min(90%,_80rem)] mx-auto grid grid-cols-1 items-center lg:gap-20 my-32 " id="section4">
@@ -230,7 +230,7 @@
     </footer>
     <script src="./navigation.js"></script>
     <script src="./copyright.js"></script>
-    <script src="./menu.js"></script>
+    <script src="./cms_content.js"></script>
 </body>
 
 </html>
