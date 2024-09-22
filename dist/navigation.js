@@ -7,6 +7,8 @@ const menu = document.getElementById("menuIcon");
 const linkContainer = document.getElementById("linkContainer");
 const navbar = document.querySelector('nav');
 const navbarHeight = navbar.offsetHeight;
+const browse = document.getElementById("browse");
+
 
 // Toggles Navbar On Mobile
 menu.addEventListener("click", () => {
@@ -28,9 +30,16 @@ navbar.addEventListener('click', function(e) {
         scroll(e.target)
     }
 });
+browse.addEventListener('click', function(e) {
+    if (e.target.tagName === 'A'){
+        e.preventDefault()
+        scroll(e.target)
+    }
+});
 // Call To Action (Depends)
 callToAction.addEventListener('click', function(e) {
     e.preventDefault()
+    console.log(e.target)
     scroll(e.target)
 })
 

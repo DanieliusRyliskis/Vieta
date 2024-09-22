@@ -3,16 +3,11 @@ const exhibitionName = document.getElementById("exhibitionName")
 const exhibitionDescription = document.getElementById("exhibitionDescription")
 const exhibitionLink = document.getElementById("exhibitionLink")
 const exhibitionPhoto = document.getElementById("exhibitionPhoto")
-// Put In Environment Variable During The Build Process
-// Change API Token 
-const apiKey = "e0fbad497858e2e977d9630beaac6a64808716b9c26633413fd3eee52850742fcf1dcbecbb3a0739f633702fb3eebcc89e1f158befeb90fedeaab2a675c4b2704b4402f24688f86f3198fdf07d53b42643cc99e1ad7630a0c7fad45e89ad0edb7c9cc7abf0f0252e4de9a337bc7f3fa86b075a77e71abff8e7b781836dc73313"
-console.log(window.location.pathname)
-
 const request = async function(endpoint) {
     // Sends Tokens That Authenticate The Request
     const options = {
         headers: {
-            Authorization: `Bearer ${apiKey}`
+            Authorization: `Bearer ${API_KEY}`
         }
     };
     const request = await fetch(endpoint, options);
@@ -28,8 +23,8 @@ const fetchAPI = async (endpoint1, endpoint2) => {
         // Sends Request To The API Endpoint For The Main Language
         if (window.location.pathname === "/dist/index.html") {
             return await request(endpoint1)
-        // Sends Request To The API Endpoint For The Secondary Language
-        } else if (window.location.pathname === "/dist/en.html") {
+            // Sends Request To The API Endpoint For The Secondary Language
+        } else if (window.location.pathname === "/dist/en/index.html") {
             return await request(endpoint2)
         }
         return null
@@ -39,7 +34,6 @@ const fetchAPI = async (endpoint1, endpoint2) => {
         return null;
     }
 }
-
 const renderItem = function(i, ulContainer) {
     const liContainer = document.createElement("li")
     liContainer.className = "grid grid-cols-1 grid-rows-2 justify-items-center items-center lg:grid-cols-[4fr_1fr]"
@@ -63,7 +57,8 @@ const renderItem = function(i, ulContainer) {
 }
 
 const generateMenu = async () => {
-    const categories = await fetchAPI("http://localhost:1337/api/kategorijos?populate=*", "http://localhost:1337/api/kategorijos-angl?populate=*");
+    const categories = await fetchAPI("https://strapi-production-ce0d.up.railway.app/api/kategorijos?populate=*", "https://strapi-production-ce0d.up.railway.app/api/kategorijos-angl?populate=*");
+    categories.data.sort((a, b) => a.id - b.id)
     categories.data.forEach((i) => {
         // For Each Category Create A Div Container
         const divContainer = document.createElement("div")
@@ -81,7 +76,7 @@ const generateMenu = async () => {
             i.attributes.patiekalai.data.forEach((i) => {
                 renderItem(i, ulContainer)
             })
-        } else if (window.location.pathname === "/dist/en.html") {
+        } else if (window.location.pathname === "/dist/en/index.html") {
             i.attributes.patiekalai_angl.data.forEach((i) => {
                 renderItem(i, ulContainer)
             })
@@ -89,8 +84,8 @@ const generateMenu = async () => {
     })
 }
 const generateExhibition = async () => {
-    const exhibition = await fetchAPI("http://localhost:1337/api/paroda?populate=*", "http://localhost:1337/api/paroda-angl?populate=*")
-    exhibitionPhoto.setAttribute("src", `http://localhost:1337${exhibition.data.attributes.Nuotrauka.data.attributes.url}`)
+    const exhibition = await fetchAPI("https://strapi-production-ce0d.up.railway.app/api/paroda?populate=*", "https://strapi-production-ce0d.up.railway.app/api/paroda-angl?populate=*")
+    exhibitionPhoto.setAttribute("srcset", exhibition.data.attributes.Nuotrauka.data.attributes.url)
     exhibitionName.textContent = exhibition.data.attributes.Pavadinimas
     exhibitionDescription.textContent = exhibition.data.attributes.Aprasymas
     exhibitionLink.setAttribute("href", exhibition.data.attributes.Nuoroda)

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<!-- change default language -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/jpg" href="../img/Favicon.jpg">
-    <title>Vieta</title>
+    <title>Vieta - vegan cafe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body class="roboto-mono-normal">
@@ -21,12 +20,13 @@
             <div class="flex justify-between items-center px-3 py-6 lg:grow lg:px-0">
                 <a class="lg:pl-6" href="#section1">
                     <picture>
-                        <source srcset="../img/svg/Logo.svg" media="(min-width: 1024px)">
-                        <img src="../img/svg/Mobile_logo.svg" alt="Vieta logo" class="cursor-pointer" id="logo" />
+                        <source srcset="../../img/svg/Logo.svg" media="(min-width: 1024px)">
+                        <img src="../../img/svg/Mobile_logo.svg" alt="vieta logotipas" class="cursor-pointer"
+                            id="logo" />
                     </picture>
                 </a>
-                <img class="lg:hidden cursor-pointer" src="../img/svg/Hamburger_menu.svg"
-                    alt="Icon that opens the navigation" id="menuIcon" />
+                <img class="lg:hidden cursor-pointer" src="../../img/svg/Hamburger_menu.svg"
+                    alt="Piktograma, kuri atidaro puslapio navigaciją" id="menuIcon" />
             </div>
             <ul class="overflow-hidden prev-state lg:h-fit lg:flex lg:justify-center lg:items-center lg:pr-6"
                 id="linkContainer">
@@ -41,12 +41,9 @@
                         href="#section4">About us</a></li>
                 <li class="py-0.5 px-2 text-lg w-fit lg:px-4 lg:py-4"><a
                         class="relative after:absolute after:bg-primary after:h-1 after:w-0 after:left-0 after:bottom-[-0.3rem] lg:after:hover:w-full after:duration-[0.5s] hover:text-slate-600"
-                        href="#section5">Contact</a></li>
-
-                <!-- Language toggle -->
-                <!-- Separate LT/EN On Mobile Displays -->
+                        href="#section5">Contacts</a></li>
                 <li class="text-sm py-0.5 px-2 w-fit lg:py-0 lg:px-4 flex flex-col lg:flex-row">
-                    <a class="roboto-mono-light cursor-pointer hover:text-slate-600" href="./index.html"
+                    <a class="roboto-mono-light cursor-pointer hover:text-slate-600" href="../index.html"
                         id="languageToggle">LT</a>
                     <span class="hidden lg:inline-block">/</span>
                     <span class="roboto-mono-bold cursor-pointer hover:text-slate-600">EN</span>
@@ -59,53 +56,52 @@
             <div class="mb-8 ml-[10%] lg:ml-0 lg:col-[1/8] lg:flex lg:justify-center">
                 <div class="max-w-md">
                     <h1 class="roboto-mono-bold text-5xl py-4">
-                        Vieta - vegan café and exhibition space</h1>
+                        Vieta
+                        - vegan café and exhibition space </h1>
                     <a class="open-sans-normal text-xl bg-primary inline-block p-2 lg:py-2.5 lg:px-4 cursor-pointer duration-[0.5s] ease-in-out hover:text-white hover:bg-accent"
-                        href="#section5" id="callToAction">Contact us</a>
+                        href="#section5" id="callToAction">Contact Us</a>
                 </div>
             </div>
             <picture class="lg:col-[8/13]">
-                <source srcset="../img/Hero_section.webp" type="image/webp">
+                <source srcset="../../img/Hero_section.webp" type="image/webp">
                 <img class="w-[80%] h-auto lg:h-[90.8vh] w-full lg:object-cover" loading="lazy"
-                    src="../img/Hero_section.jpg" alt="Photo of cookies">
+                    src="../../img/Hero_section.jpg" alt="restorano nuotrauka">
             </picture>
         </section>
         <!-- Menu -->
         <section class="bg-secondary " id="section2">
-            <h2 class=" text-center text-4xl roboto-mono-bold py-4 sm:py-8">Meniu</h2>
+            <h2 class=" text-center text-4xl roboto-mono-bold py-4 sm:py-8">Menu</h2>
             <div id="menuContent">
             </div>
         </section>
         <section class="w-[min(90%,_80rem)] mx-auto gap-16 grid grid-cols-1 my-32 lg:grid-cols-2 items-center">
             <div class="my-12 my-4 max-w-lg">
-                <h2 class="roboto-mono-bold text-4xl text-left">Order Online</h2>
+                <h2 class="roboto-mono-bold text-4xl text-left">Order Online </h2>
                 <h4 class="open-sans-normal text-2xl my-4">Are you hungry but can't visit us? No problem! Enjoy our food
                     without leaving home.</h4>
                 <a class="open-sans-normal text-xl bg-primary inline-block p-2 lg:py-2.5 lg:px-4 cursor-pointer duration-[0.5s] ease-in-out hover:text-white hover:bg-accent"
                     href="https://wolt.com/lt/ltu/vilnius/restaurant/vieta-sv-ignoto-g" target="_blank"
-                    rel="noopener noreferrer">Order now</a>
+                    rel="noopener noreferrer">Order Now</a>
             </div>
             <picture>
-                <source srcset="../img/Wolt.webp" type="image/webp">
-                <img class="w-full" src="../img/Wolt.jpg" alt="Picture of Wolt's mobile application">
+                <source srcset="../../img/Wolt.webp" type="image/webp">
+                <img class="w-full" src="../../img/Wolt.jpg" alt="wolt mobiliosios aplikacijos nuotrauka">
             </picture>
         </section>
         <section class="w-[min(90%,_80rem)] mx-auto gap-16 grid grid-cols-1 my-32 lg:grid-cols-2 items-center"
             id="section3">
             <div class="my-12 my-4 max-w-lg lg:order-2">
-                <h2 class="roboto-mono-bold text-4xl text-left" id="exhibitionName">Exhibition
-                </h2>
+                <h2 class="roboto-mono-bold text-4xl text-left" id="exhibitionName">Exhibition </h2>
                 <h4 class="open-sans-normal text-2xl my-4" id="exhibitionDescription">Don't miss the chance to see
                     unique exhibitions. Whether you love great food or art, our exhibitions offer a unique environment
-                    that you can enjoy every time you join us.
-                </h4>
+                    that you can enjoy every time you join us.</h4>
                 <a class="open-sans-normal text-xl bg-primary inline-block p-2 lg:py-2.5 lg:px-4 cursor-pointer duration-[0.5s] ease-in-out hover:text-white hover:bg-accent"
                     href="https://www.facebook.com/people/Vieta/61560650626307/" target="_blank"
                     rel="noopener noreferrer" id="exhibitionLink">Learn More</a>
             </div>
             <picture>
-                <source src="" id="exhibitionPhoto">
-                <img class="w-full" src="../img/Art.png" alt="Parodos nuotrauka">
+                <source src="../../img/Art.webp" id="exhibitionPhoto">
+                <img class="w-full" src="../../img/Art.jpg" alt="Parodos nuotrauka">
             </picture>
         </section>
         <section class="w-[min(90%,_80rem)] mx-auto grid grid-cols-1 items-center lg:gap-20 my-32 " id="section4">
@@ -115,39 +111,39 @@
             <!-- About Section 1 -->
             <div class="lg:grid lg:grid-cols-2 items-center gap-16">
                 <picture>
-                    <source srcset="../img/About_1.webp" type="image/webp">
-                    <img class="w-full" src="../img/About_1.jpg"
-                        alt="Owners of the restaurant standing near the entrance">
+                    <source srcset="../../img/About_1.webp" type="image/webp">
+                    <img class="w-full" src="../../img/About_1.jpg" alt="restorano savininkai stovintys prie įėjimo">
                 </picture>
-                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">We are a vegan café in the heart of
-                    Vilnius. Our food is down-to-earth and simple - people who visit us often say they feel like they're
-                    visiting their grandmother. We want you to feel like you're visiting us, not just a café. The main
-                    rule here is respect for each other, no matter what your role in the place</p>
+                <p class="open-sans-normal text-lg my-12 justify-self-start max-w-lg lg:my-0">
+                    We are a vegan café in the heart of Vilnius. Our food is down-to-earth and simple - people who visit
+                    us often say they feel like they're visiting their grandmother. We want you to feel like you're
+                    visiting us, not just a café. The main rule here is respect for each other, no matter what your role
+                    in the place </p>
             </div>
             <!-- About Section 2 -->
             <div class="lg:grid lg:grid-cols-2 items-center gap-16">
                 <picture class="lg:order-2">
-                    <source srcset="../img/About_2.webp" type="image/webp">
-                    <img class="w-full" src="../img/About_2.jpg"
-                        alt="Kitchen staff holding plants and posing near the entrance">
+                    <source srcset="../../img/About_2.webp" type="image/webp">
+                    <img class="w-full" src="../../img/About_2.jpg" alt="virtuvės darbuotojai laikantys augalus">
                 </picture>
-                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">We respect not only people, but
-                    also nature. The place is one of the oldest vegetarian cafés in Vilnius and became vegan in 2022. We
-                    care deeply about nature and the life in it, which is why we sort, choose only ethical products,
-                    minimise food waste, encourage people to bring their own takeaway containers, etc.</p>
+                <p class="open-sans-normal text-lg my-12 justify-self-start max-w-lg lg:my-0">
+                    We respect not only people, but also nature. The place is one of the oldest vegetarian cafés in
+                    Vilnius and
+                    became vegan in 2022. We care deeply about nature and the life in it, which is why we sort, choose
+                    only
+                    ethical products, minimise food waste, encourage people to bring their own takeaway containers, etc.
             </div>
             <!-- About Section 3 -->
             <div class="lg:grid lg:grid-cols-2 items-center gap-16">
                 <picture>
-                    <source srcset="../img/About_3.webp" type="image/webp">
-                    <img class="w-full" src="../img/About_3.jpg"
-                        alt="Picture that was taken during Linos Ziz exhibition">
+                    <source srcset="../../img/About_3.webp" type="image/webp">
+                    <img class="w-full" src="../../img/About_3.jpg" alt="nuotrauka iš Linos Ziz parodos">
                 </picture>
-                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">Our white café walls are decorated
+                <p class="open-sans-normal text-lg my-12 justify-self-start max-w-lg lg:my-0"> Our white café walls are decorated
                     with art, so we decided to host exhibitions on site. These are mostly works by emerging artists
                     (photography, painting, graphics, etc.), but we also had an exhibition by the famous Lithuanian
                     painter Aloyzas Stasiulevičius. So if you would like to have your own exhibition with us, get in
-                    touch !</p>
+                    touch !
             </div>
         </section>
     </main>
@@ -155,20 +151,19 @@
         <div class="py-8 lg:grid lg:grid-cols-12 lg:grid-rows-2 lg:pt-8 lg:pb-16">
             <a class="lg:col-[1/4]" href="#section1">
                 <picture>
-                    <source srcset="../img/svg/Logo.svg" media="(min-width: 1024px)">
-                    <img src="../img/svg/Mobile_logo.svg" alt="Vieta logo" class="cursor-pointer mx-auto pt-4"
+                    <source srcset="../../img/svg/Logo.svg" media="(min-width: 1024px)">
+                    <img src="../../img/svg/Mobile_logo.svg" alt="vieta logotipas" class="cursor-pointer mx-auto pt-4"
                         id="logoFooter" />
                 </picture>
             </a>
-            <!-- Links Flexbox Container -->
             <div class="lg:flex lg:gap-20 lg:col-[5/13] lg:row-[1/3]">
                 <!-- Section 1 -->
                 <div>
                     <h3 class="text-center text-3xl roboto-mono-medium py-4">Browse</h3>
-                    <ul>
-                        <li class="text-center text-base lg:text-left">Menu</li>
-                        <li class="text-center text-base lg:text-left">Exhibitions</li>
-                        <li class="text-center text-base lg:text-left">About us</li>
+                    <ul id="browse">
+                        <li class="text-center text-base lg:text-left"><a href="#section2">Menu</a></li>
+                        <li class="text-center text-base lg:text-left"><a href="#section3">Exhibitions</a></li>
+                        <li class="text-center text-base lg:text-left"><a href="#section4">About us</a></li>
                     </ul>
                 </div>
                 <!-- Section 2 -->
@@ -176,7 +171,7 @@
                     <h3 class="text-center text-3xl roboto-mono-medium py-4 lg:text-left">Working hours</h3>
                     <ul class="flex justify-center items-center gap-2">
                         <li>
-                            <img src="../img/svg/Clock.svg" alt="Clock icon">
+                            <img src="../../img/svg/Clock.svg" alt="laikrodžio piktograma">
                         </li>
                         <div>
                             <li class="text-base">I-V 11:30-16:00 h.</li>
@@ -188,17 +183,26 @@
                 <div>
                     <h3 class="text-center roboto-mono-medium text-3xl py-4 lg:text-left">Contacts</h3>
                     <ul>
-                        <li class="flex justify-center text-base items-center gap-2 lg:justify-start">
-                            <img src="../img/svg/Location.svg" alt="Location icon">
-                            <span>Šv. Ignoto 12 - 1, Vilnius</span>
+                        <li>
+                            <a href="https://www.google.com/maps/place/%C5%A0v.+Ignoto+g.+12-1,+Vilnius,+01144+Vilniaus+m.+sav."
+                                class="flex justify-center text-base items-center gap-2 lg:justify-start">
+                                <img src="../../img/svg/Location.svg" alt="vietos piktograma">
+                                <span>Šv. Ignoto 12 - 1, Vilnius</span>
+                            </a>
                         </li>
-                        <li class="flex justify-center text-base items-center gap-2 lg:justify-start">
-                            <img src="../img/svg/Mail.svg" alt="Mail icon">
-                            <span>sv.vieta@gmail.com</span>
+                        <li>
+                            <a href="mailto:sv.vieta@gmail.com"
+                                class="flex justify-center text-base items-center gap-2 lg:justify-start">
+                                <img src="../../img/svg/Mail.svg" alt="pašto piktograma">
+                                <span>sv.vieta@gmail.com</span>
+                            </a>
                         </li>
-                        <li class="flex justify-center text-base items-center gap-2 lg:justify-start">
-                            <img src="../img/svg/Phone.svg" alt="Phone icon">
-                            <span>+370 675 03263</span>
+                        <li>
+                            <a href="tel:+37067503263"
+                                class="flex justify-center text-base items-center gap-2 lg:justify-start">
+                                <img src="../../img/svg/Phone.svg" alt="telefono piktograma">
+                                <span>+370 675 03263</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -207,19 +211,19 @@
             <div class="flex justify-center gap-4 items-center py-4 lg:gap-6 lg:col-[2/3]">
                 <a href="https://www.facebook.com/people/Vieta/61560650626307/" target="_blank"
                     rel="noopener noreferrer">
-                    <img class="w-8 h-auto" src="../img/svg/Facebook.svg" alt="facebook icon">
+                    <img class="w-8 h-auto" src="../../img/svg/Facebook.svg" alt="facebook piktograma">
                 </a>
                 <a href="https://www.instagram.com/sv.vieta/" target="_blank" rel="noopener noreferrer">
-                    <img class="w-8 h-auto" src="../img/svg/Instagram.svg" alt="instagram icon">
+                    <img class="w-8 h-auto" src="../../img/svg/Instagram.svg" alt="instagram piktograma">
                 </a>
             </div>
         </div>
         <hr class="bg-accent border-none h-px">
         <h5 class="text-sm" id="copyright"></h5>
     </footer>
-    <script src="./navigation.js"></script>
-    <script src="./copyright.js"></script>
-    <script src="cms_content.js"></script>
+    <script src="../navigation.js"></script>
+    <script src="../copyright.js"></script>
+    <script src="../cms_content.js"></script>
 </body>
 
 </html>

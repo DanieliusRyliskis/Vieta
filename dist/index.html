@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<!-- change default language -->
 <html lang="lt">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/jpg" href="../img/Favicon.jpg">
-    <title>Vieta</title>
+    <title>Vieta - veganiška kavinė</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,10 +13,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
 </head>
-
-<!-- Tab logo -->
-<!-- Favicon should be atleast 96x96 -->
-<!-- Write Commits -->
 
 <body class="roboto-mono-normal">
     <header class="sticky top-0">
@@ -46,13 +41,10 @@
                 <li class="py-0.5 px-2 text-lg w-fit lg:px-4 lg:py-4"><a
                         class="relative after:absolute after:bg-primary after:h-1 after:w-0 after:left-0 after:bottom-[-0.3rem] lg:after:hover:w-full after:duration-[0.5s] hover:text-slate-600"
                         href="#section5">Kontaktai</a></li>
-
-                <!-- Language toggle -->
-                <!-- Separate LT/EN On Mobile Displays -->
                 <li class="text-sm py-0.5 px-2 w-fit lg:py-0 lg:px-4 flex flex-col lg:flex-row">
                     <span class="roboto-mono-bold cursor-pointer hover:text-slate-600">LT</span>
                     <span class="hidden lg:inline-block">/</span>
-                    <a class="roboto-mono-light cursor-pointer hover:text-slate-600" href="./en.html"
+                    <a class="roboto-mono-light cursor-pointer hover:text-slate-600" href="./en/index.html"
                         id="languageToggle">EN</a>
                 </li>
             </ul>
@@ -72,7 +64,7 @@
             <picture class="lg:col-[8/13]">
                 <source srcset="../img/Hero_section.webp" type="image/webp">
                 <img class="w-[80%] h-auto lg:h-[90.8vh] w-full lg:object-cover" loading="lazy"
-                    src="../img/Hero_section.jpg" alt="sausainių nuotrauka">
+                    src="../img/Hero_section.jpg" alt="restorano nuotrauka">
             </picture>
         </section>
         <!-- Menu -->
@@ -104,7 +96,8 @@
             <div class="my-12 my-4 max-w-lg lg:order-2">
                 <h2 class="roboto-mono-bold text-4xl text-left" id="exhibitionName">Parodos pavadinimas
                 </h2>
-                <h4 class="open-sans-normal text-2xl my-4" id="exhibitionDescription">Nepraleiskite progos išvysti nepakartojamų ekspozicijų.
+                <h4 class="open-sans-normal text-2xl my-4" id="exhibitionDescription">Nepraleiskite progos išvysti
+                    nepakartojamų ekspozicijų.
                     Nesvarbu, ar jums patinka puikus maistas, ar menas, mūsų ekspozicijos siūlo nepakartojamą aplinką,
                     kuria galėsite mėgautis kiekvieną kartą, kai prie mūsų prisijungsite.
                 </h4>
@@ -114,8 +107,8 @@
                     plačiau</a>
             </div>
             <picture>
-                <source src="" id="exhibitionPhoto">
-                <img class="w-full" src="../img/Art.png" alt="Parodos nuotrauka">
+                <source src="../img/Art.webp" id="exhibitionPhoto">
+                <img class="w-full" src="../img/Art.jpg" alt="Parodos nuotrauka">
             </picture>
         </section>
         <section class="w-[min(90%,_80rem)] mx-auto grid grid-cols-1 items-center lg:gap-20 my-32 " id="section4">
@@ -128,7 +121,7 @@
                     <source srcset="../img/About_1.webp" type="image/webp">
                     <img class="w-full" src="../img/About_1.jpg" alt="restorano savininkai stovintys prie įėjimo">
                 </picture>
-                <p class="open-sans-normal text-lg my-12 justify-self-start lg:my-0">
+                <p class="open-sans-normal text-lg my-12 justify-self-start">
                     Esame
                     veganiška
                     kavinė įsikūrusi Vilniaus širdyje.
@@ -177,10 +170,10 @@
                 <!-- Section 1 -->
                 <div>
                     <h3 class="text-center text-3xl roboto-mono-medium py-4">Naršyti</h3>
-                    <ul>
-                        <li class="text-center text-base lg:text-left">Meniu</li>
-                        <li class="text-center text-base lg:text-left">Parodos</li>
-                        <li class="text-center text-base lg:text-left">Apie mus</li>
+                    <ul id="browse">
+                        <li class="text-center text-base lg:text-left"><a href="#section2">Meniu</a></li>
+                        <li class="text-center text-base lg:text-left"><a href="#section3">Parodos</a></li>
+                        <li class="text-center text-base lg:text-left"><a href="#section4">Apie mus</a></li>
                     </ul>
                 </div>
                 <!-- Section 2 -->
@@ -197,20 +190,34 @@
                     </ul>
                 </div>
                 <!-- Section 3 -->
+
+
+
+                <!-- Add links -->
+
                 <div>
                     <h3 class="text-center roboto-mono-medium text-3xl py-4 lg:text-left">Kontaktai</h3>
                     <ul>
-                        <li class="flex justify-center text-base items-center gap-2 lg:justify-start">
-                            <img src="../img/svg/Location.svg" alt="vietos piktograma">
-                            <span>Šv. Ignoto 12 - 1, Vilnius</span>
+                        <li>
+                            <a href="https://www.google.com/maps/place/%C5%A0v.+Ignoto+g.+12-1,+Vilnius,+01144+Vilniaus+m.+sav."
+                                class="flex justify-center text-base items-center gap-2 lg:justify-start">
+                                <img src="../img/svg/Location.svg" alt="vietos piktograma">
+                                <span>Šv. Ignoto 12 - 1, Vilnius</span>
+                            </a>
                         </li>
-                        <li class="flex justify-center text-base items-center gap-2 lg:justify-start">
-                            <img src="../img/svg/Mail.svg" alt="pašto piktograma">
-                            <span>sv.vieta@gmail.com</span>
+                        <li>
+                            <a href="mailto:sv.vieta@gmail.com"
+                                class="flex justify-center text-base items-center gap-2 lg:justify-start">
+                                <img src="../img/svg/Mail.svg" alt="pašto piktograma">
+                                <span>sv.vieta@gmail.com</span>
+                            </a>
                         </li>
-                        <li class="flex justify-center text-base items-center gap-2 lg:justify-start">
-                            <img src="../img/svg/Phone.svg" alt="telefono piktograma">
-                            <span>+370 675 03263</span>
+                        <li>
+                            <a href="tel:+37067503263"
+                                class="flex justify-center text-base items-center gap-2 lg:justify-start">
+                                <img src="../img/svg/Phone.svg" alt="telefono piktograma">
+                                <span>+370 675 03263</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -229,9 +236,9 @@
         <hr class="bg-accent border-none h-px">
         <h5 class="text-sm" id="copyright"></h5>
     </footer>
-    <script src="./navigation.js"></script>
-    <script src="./copyright.js"></script>
-    <script src="./cms_content.js"></script>
+    <script src="navigation.js"></script>
+    <script src="copyright.js"></script>
+    <script src="cms_content.js"></script>
 </body>
 
 </html>

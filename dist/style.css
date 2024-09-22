@@ -647,11 +647,6 @@ video {
   width: 100%;
 }
 
-.w-min {
-  width: -moz-min-content;
-  width: min-content;
-}
-
 .max-w-lg {
   max-width: 32rem;
 }
@@ -666,10 +661,6 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .grid-rows-2 {
@@ -1042,11 +1033,6 @@ video {
   .lg\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
-  }
-
-  .lg\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
   }
 
   .lg\:grow {
