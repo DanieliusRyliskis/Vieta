@@ -4,10 +4,12 @@ const exhibitionDescription = document.getElementById("exhibitionDescription")
 const exhibitionLink = document.getElementById("exhibitionLink")
 const exhibitionPhoto = document.getElementById("exhibitionPhoto")
 const request = async function(endpoint) {
+
+console.log(process.env.API_KEY)
     // Sends Tokens That Authenticate The Request
     const options = {
         headers: {
-            Authorization: `Bearer ${API_KEY}`
+            Authorization: `Bearer ${process.env.API_KEY}`
         }
     };
     const request = await fetch(endpoint, options);
