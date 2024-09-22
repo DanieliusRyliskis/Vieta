@@ -39,7 +39,6 @@ browse.addEventListener('click', function(e) {
 // Call To Action (Depends)
 callToAction.addEventListener('click', function(e) {
     e.preventDefault()
-    console.log(e.target)
     scroll(e.target)
 })
 
