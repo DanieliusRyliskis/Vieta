@@ -3,13 +3,12 @@ const exhibitionName = document.getElementById("exhibitionName")
 const exhibitionDescription = document.getElementById("exhibitionDescription")
 const exhibitionLink = document.getElementById("exhibitionLink")
 const exhibitionPhoto = document.getElementById("exhibitionPhoto")
+const API_TOKEN = process.env.API_KEY
 const request = async function(endpoint) {
-
-console.log(process.env.API_KEY)
     // Sends Tokens That Authenticate The Request
     const options = {
         headers: {
-            Authorization: `Bearer ${process.env.API_KEY}`
+            Authorization: `Bearer ${API_TOKEN}`
         }
     };
     const request = await fetch(endpoint, options);
