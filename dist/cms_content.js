@@ -5,7 +5,6 @@ const exhibitionName = document.getElementById("exhibitionName")
 const exhibitionDescription = document.getElementById("exhibitionDescription")
 const exhibitionLink = document.getElementById("exhibitionLink")
 const exhibitionPhoto = document.getElementById("exhibitionPhoto")
-console.log(API_TOKEN)
 
 const request = async function(endpoint) {
     // Sends Tokens That Authenticate The Request
@@ -25,10 +24,14 @@ const request = async function(endpoint) {
 const fetchAPI = async (endpoint1, endpoint2) => {
     try {
         // Sends Request To The API Endpoint For The Main Language
-        if (window.location.pathname === "/dist/index.html") {
+        // For Local Development
+        // if (window.location.pathname === "/dist/index.html") {
+        if (window.location.pathname === "/") {
             return await request(endpoint1)
             // Sends Request To The API Endpoint For The Secondary Language
-        } else if (window.location.pathname === "/dist/en/index.html") {
+        // For Local Development
+        // } else if (window.location.pathname === "/dist/en/index.html") {
+        } else if (window.location.pathname === "/en/") {
             return await request(endpoint2)
         }
         return null
