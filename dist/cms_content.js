@@ -79,11 +79,11 @@ const generateMenu = async () => {
         ulContainer.className = "w-[min(80%,_100rem)] mx-auto grid gap-10 grid-cols-1 lg:grid-cols-2"
         divContainer.append(ulContainer)
         // Items That Belong To That Category
-        if (window.location.pathname === "/dist/index.html") {
+        if (window.location.pathname === "/") {
             i.attributes.patiekalai.data.forEach((i) => {
                 renderItem(i, ulContainer)
             })
-        } else if (window.location.pathname === "/dist/en/index.html") {
+        } else if (window.location.pathname === "/en/") {
             i.attributes.patiekalai_angl.data.forEach((i) => {
                 renderItem(i, ulContainer)
             })
