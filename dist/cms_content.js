@@ -5,6 +5,8 @@ const exhibitionName = document.getElementById("exhibitionName")
 const exhibitionDescription = document.getElementById("exhibitionDescription")
 const exhibitionLink = document.getElementById("exhibitionLink")
 const exhibitionPhoto = document.getElementById("exhibitionPhoto")
+console.log(API_TOKEN)
+
 const request = async function(endpoint) {
     // Sends Tokens That Authenticate The Request
     const options = {
