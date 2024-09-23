@@ -1,4 +1,4 @@
-import API_TOKEN from "./content"
+import API_TOKEN from "./api_token"
 
 const menuContent = document.getElementById("menuContent")
 const exhibitionName = document.getElementById("exhibitionName")
