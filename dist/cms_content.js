@@ -10,8 +10,10 @@ const request = async function(endpoint) {
     // Sends Tokens That Authenticate The Request
     const options = {
         headers: {
-            Authorization: `Bearer ${API_TOKEN}`
-        }
+            Authorization: `Bearer ${API_TOKEN}`,
+        },
+        // Ensures No Caching Of The API Response
+        cache: 'no-cache'
     };
     const request = await fetch(endpoint, options);
     if (!request.ok) {
